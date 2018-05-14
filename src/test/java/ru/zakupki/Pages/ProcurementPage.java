@@ -53,7 +53,7 @@ public class ProcurementPage {
     public static void Clickvendorselection() throws IOException {
 //клик на поле Выбор поставщика
         WebElement name = $(By.xpath("//label[text()='Выбор поставщика']"));
-        sleep(1500);
+        sleep(1600);
 
         try {
 
