@@ -132,7 +132,7 @@ public class Check_Boxes_1_Page {
     public static void fillcommentariy(String txt) throws IOException {
 //заполняем комментарий
         WebElement comm = $(By.xpath("//textarea[@aria-label='Комментарий']"));
-        sleep(1500);
+        sleep(1600);
         try {
             comm.isDisplayed();
             actions().click(comm).sendKeys(txt).perform();
