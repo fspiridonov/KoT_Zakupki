@@ -96,7 +96,7 @@ public class TestProcurementPage {
     @Then("^Проверяет, что форма закрылась$")
     public static void estCloseWindow() throws InterruptedException, IOException {
 
-        sleep(5000);
+        sleep(4000);
         TestHelper.testCloseWindowCreatInit("Новая инициатива");
     }
 

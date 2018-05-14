@@ -4,10 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java" description="sleep(1600);" line="88" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4df23628-aa4c-4340-aee3-a6fa91811095" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/AutorizationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/AutorizationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestAutorizationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestAutorizationPage.java" afterDir="false" />
+    <list default="true" id="4df23628-aa4c-4340-aee3-a6fa91811095" name="Default" comment="[+] Правки">
       <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/formatter.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cucumber-pretty/formatter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cucumber-pretty/index.html" afterDir="false" />
@@ -45,8 +42,8 @@
       <file leaf-file-name="stage#1.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            <state relative-caret-position="366">
+              <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -72,8 +69,8 @@
       <file leaf-file-name="LoggerConsole.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Helpers/LoggerConsole.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+            <state relative-caret-position="210">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -81,7 +78,7 @@
       <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Runners/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="275">
               <caret line="36" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
@@ -96,11 +93,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestProcurementPage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestProcurementPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestProcurementPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="94" column="28" lean-forward="true" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
+            <state relative-caret-position="479">
+              <caret line="108" selection-start-line="108" selection-end-line="108" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Helpers/TestHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="504" column="23" selection-start-line="504" selection-start-column="23" selection-end-line="504" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -114,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ButtonsUtil.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ButtonsUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Helpers/ButtonsUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="22" column="128" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="128" />
+            <state relative-caret-position="210">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -216,16 +222,16 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestRedactorPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#Edit.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/RedactorPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestProcurementPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestCheck_boxes_1_Page.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Helpers/ButtonsUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1Check-Boxes.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Helpers/TestHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Runners/Runner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/AutorizationPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestAutorizationPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestProcurementPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1.feature" />
       </list>
     </option>
   </component>
@@ -767,22 +773,24 @@
       <option name="project" value="LOCAL" />
       <updated>1526287236179</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="[+] Клик на поле Пароль с помощью кнопки TAB">
+      <created>1526299564512</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1526299564512</updated>
+    </task>
+    <task id="LOCAL-00033" summary="[+] Правки">
+      <created>1526303926345</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1526303926345</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Runner - 2018.05.11 at 14h 48m 33s.xml">
-      <configuration name="Runner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Runner - 2018.05.14 at 08h 32m 31s.xml">
-      <configuration name="Runner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Runner - 2018.05.14 at 08h 37m 58s.xml">
-      <configuration name="Runner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Runner - 2018.05.14 at 09h 26m 54s.xml">
-      <configuration name="Runner" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Runner - 2018.05.14 at 14h 50m 14s.xml">
       <configuration name="Runner" configurationId="JUnit" />
     </history-entry>
@@ -801,6 +809,18 @@
     <history-entry file="Runner - 2018.05.14 at 14h 59m 47s.xml">
       <configuration name="Runner" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Runner - 2018.05.14 at 15h 33m 43s.xml">
+      <configuration name="Runner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Runner - 2018.05.14 at 15h 36m 13s.xml">
+      <configuration name="Runner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Runner - 2018.05.14 at 16h 00m 26s.xml">
+      <configuration name="Runner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Runner - 2018.05.14 at 16h 06m 50s.xml">
+      <configuration name="Runner" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -813,6 +833,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.26823795" />
@@ -822,7 +843,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5102261" side_tool="true" weight="0.35" />
       <window_info anchor="right" id="Maven Projects" order="8" sideWeight="0.8328076" visible="true" weight="0.1108742" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.48977396" weight="0.34904602" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.48977396" weight="0.34858388" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3782267" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32659933" />
       <window_info id="Capture Tool" order="2" />
@@ -905,7 +926,9 @@
     <MESSAGE value="[+] Переименования и добавили сценарии" />
     <MESSAGE value="[+] обратный драг енд дроп, изменился метод ввода данных, добавлены сценарии выбора типа, добавлено глобальное хранилище" />
     <MESSAGE value="[+] Увеличен таймер" />
-    <option name="LAST_COMMIT_MESSAGE" value="[+] Увеличен таймер" />
+    <MESSAGE value="[+] Клик на поле Пароль с помощью кнопки TAB" />
+    <MESSAGE value="[+] Правки" />
+    <option name="LAST_COMMIT_MESSAGE" value="[+] Правки" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1145,13 +1168,6 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/io/FileInputStream.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Helpers/TestHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="71" column="50" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestCheck_boxes_1_Page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1166,20 +1182,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Runners/Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1Check-Boxes.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="36" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -1187,10 +1189,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestAutorizationPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Helpers/ButtonsUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        <state relative-caret-position="210">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Runners/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Helpers/LoggerConsole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
@@ -1201,31 +1217,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Helpers/LoggerConsole.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Helpers/TestHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+        <state relative-caret-position="621">
+          <caret line="504" column="23" selection-start-line="504" selection-start-column="23" selection-end-line="504" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1Check-Boxes.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="36" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestAutorizationPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="366">
+          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestProcurementPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="94" column="28" lean-forward="true" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Helpers/ButtonsUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="22" column="128" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="128" />
+        <state relative-caret-position="479">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
         </state>
       </provider>
     </entry>
