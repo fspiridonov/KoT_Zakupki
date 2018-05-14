@@ -2,6 +2,7 @@ package ru.zakupki.Pages;
 
 import com.codeborne.selenide.Condition;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import ru.zakupki.Helpers.LoggerConsole;
 import ru.zakupki.Helpers.TestHelper;
@@ -32,9 +33,9 @@ public class AutorizationPage {
     public static void fillPassword(String password) throws FileNotFoundException, IOException {
 //        Ввожу пароль password
         WebElement fieldPassword = $(By.xpath("//input[@aria-label='Пароль']"));
-            try {
+        try {
             $(By.xpath("//input[@aria-label='Пароль']")).should(Condition.visible);
-            actions().moveToElement(fieldPassword).click().sendKeys(password).perform();
+            actions().sendKeys(Keys.TAB).sendKeys(password).perform();
             LoggerConsole.LoggNotError("Пароль введен в поле 'Пароль'");
         } catch (Error e) {
             LoggerConsole.Logg("Поле не существует | Поле не активна");

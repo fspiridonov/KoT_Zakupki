@@ -14,8 +14,9 @@ import static java.lang.Thread.sleep;
 public class TestAutorizationPage {
 
     @When("^вводим логин \"(.*)\"$")
-    public static void loginL(String log) throws IOException {
+    public static void loginL(String log) throws IOException, InterruptedException {
         AutorizationPage.fillLogin(log);
+        sleep(1000);
     }
 
     @When("^вводим пароль \"(.*)\"$")
