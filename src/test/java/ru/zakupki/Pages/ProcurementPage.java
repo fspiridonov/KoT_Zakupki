@@ -86,7 +86,7 @@ public class ProcurementPage {
     public static void clickvaluation() throws IOException {
 //клик на поле Расчет НМЦК
         WebElement name = $(By.xpath("//label[text()='Расчет НМЦК']"));
-        sleep(1500);
+        sleep(1600);
 
         try {
             name.isDisplayed();
