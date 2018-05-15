@@ -43,7 +43,7 @@ public class AutorizationPage {
     }
 
     public static void exit() throws IOException {
-        WebElement street = $(By.xpath("//a[@href='/logout']"));
+        WebElement street = $(By.xpath("//a[@class='btn btn--icon']/*/*[text()='power_settings_new']"));
         sleep(3000);
         try {
             actions().click(street).perform();

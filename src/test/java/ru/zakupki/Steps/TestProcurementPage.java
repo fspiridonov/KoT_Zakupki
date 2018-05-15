@@ -38,8 +38,9 @@ public class TestProcurementPage {
 
 
     @When("^Выбираем поставщика \"(.*)\" из выпадающего списка$")
-    public static void selectVendor(String vend) throws IOException {
-        ProcurementPage.selectvendor(vend);
+    public static void selectVendor(String vend) throws IOException, InterruptedException {
+        sleep(2000);
+        ProcurementPage.selectVendor(vend);
     }
 
     @When("^Клик на поле 'Расчет НМЦК'$")
@@ -50,7 +51,7 @@ public class TestProcurementPage {
 
     @When("^Выбирает 'Расчет НМЦК' \"(.*)\" из выпадающего списка$")
     public static void selecteSignNMCK(String val) throws IOException {
-        ProcurementPage.selectvaluation(val);
+        ProcurementPage.selectValuation(val);
     }
 
     @When("^Клик на поле 'Закон'$")
@@ -64,10 +65,10 @@ public class TestProcurementPage {
         ProcurementPage.selectordinance(val);
     }
 
-    @When("^Заполняет поле 'Сумма в рублях'$")
-    public static void fillSumma() throws InterruptedException, IOException {
+    @When("^Заполняет поле \"(.*)\"$")
+    public static void fillSumma(String sum) throws InterruptedException, IOException {
         sleep(1000);
-        ProcurementPage.fillsumma("100000");
+        ProcurementPage.fillsumma(sum);
     }
 
     @When("^Заполняет следующее поле 'Сумма в рублях'$")

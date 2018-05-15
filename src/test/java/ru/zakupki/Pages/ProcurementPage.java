@@ -67,9 +67,9 @@ public class ProcurementPage {
         }
     }
 
-    public static void selectvendor(String ven) throws FileNotFoundException, IOException {
+    public static void selectVendor(String ven) throws FileNotFoundException, IOException {
 //        //Выбираем поставщика из выпадающего списка
-        WebElement vendor = $(By.xpath("//div[@id='app']/div[4]/div/div/div["+ ven +"]/a/div/div"));
+        WebElement vendor = $(By.xpath("//div[@class='card']/div/div/a/div/div[text()='"+ ven +"']"));
         try {
             actions().click(vendor).perform();
 
@@ -98,17 +98,17 @@ public class ProcurementPage {
         }
     }
 
-    public static void selectvaluation(String valua) throws FileNotFoundException, IOException {
+    public static void selectValuation(String valua) throws FileNotFoundException, IOException {
 //        Ввожу логин login
-        WebElement valuation = $(By.xpath("//div[text()='" + valua + "']"));
+        WebElement valuation = $(By.xpath("//div[@role='radiogroup']/*/*/*[text()='" + valua + "']"));
         try {
 
             actions().click(valuation).perform();
 //            actions().sendKeys(fieldLogin,login).perform();
 
-            LoggerConsole.LoggNotError("Логин введен в поле авторизации");
+            LoggerConsole.LoggNotError("Выбран способ оплаты " + valua + "");
         } catch (Error e) {
-            LoggerConsole.Logg("Поле не существует | Поле не активна");
+            LoggerConsole.Logg("Чек-бок " + valua + " не был выбран");
         }
     }
 

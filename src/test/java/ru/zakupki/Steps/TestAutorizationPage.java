@@ -26,7 +26,7 @@ public class TestAutorizationPage {
         ButtonsUtil.clickSpanButton("Войти");
     }
 
-    @When("^logout$")
+    @When("^Выход из системы$")
     public static void logOut() throws IOException {
         AutorizationPage.exit();
     }
