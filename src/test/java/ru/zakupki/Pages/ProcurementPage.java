@@ -12,6 +12,7 @@ import ru.zakupki.Helpers.TestHelper;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Random;
 
 import static com.codeborne.selenide.Selenide.*;
 import static ru.zakupki.Helpers.LoggerConsole.Logg;
@@ -24,11 +25,12 @@ public class ProcurementPage {
 //Заполняет поле 'Наименование'
         WebElement name = $(By.xpath("//textarea[@name='name']"));
         sleep(1500);
-
+        Random random = new Random();
+        int num = random.nextInt(50);
         try {
 
             name.isDisplayed();
-            actions().click(name).sendKeys(txt).perform();
+            actions().click(name).sendKeys(txt+num).perform();
             LoggerConsole.LoggNotError("Заполнение поля наименования");
 
         } catch (Error e) {
@@ -40,10 +42,11 @@ public class ProcurementPage {
 //заполняем поле обоснования
         WebElement name = $(By.xpath("//textarea[@name='reason']"));
         sleep(1500);
-
+        Random random = new Random();
+        int num = random.nextInt(50);
         try {
             name.isDisplayed();
-            actions().click(name).sendKeys(txt).perform();
+            actions().click(name).sendKeys(txt+num).perform();
             LoggerConsole.LoggNotError("Заполнение поля обоснование");
 
         } catch (Error e) {

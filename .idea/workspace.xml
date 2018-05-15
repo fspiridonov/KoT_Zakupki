@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java" description="sleep(1600);" line="89" />
+    <bookmark url="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java" description="sleep(1600);" line="92" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4df23628-aa4c-4340-aee3-a6fa91811095" name="Default" comment="[+] Правки">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/AutorizationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/AutorizationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestAutorizationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestAutorizationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestProcurementPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestProcurementPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/formatter.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cucumber-pretty/formatter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cucumber-pretty/index.html" afterDir="false" />
@@ -45,11 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="stage#1.feature" pinned="false" current-in-tab="true">
+      <file leaf-file-name="stage#1.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state relative-caret-position="187">
+              <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -58,7 +54,34 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestAutorizationPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+              <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stage#1Check-Boxes.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1Check-Boxes.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stage#2Check-Boxes.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#2Check-Boxes.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stage#Edit.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#Edit.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -66,7 +89,7 @@
       <file leaf-file-name="AutorizationPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/AutorizationPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="527">
               <caret line="45" column="100" selection-start-line="45" selection-start-column="100" selection-end-line="45" selection-end-column="100" />
             </state>
           </provider>
@@ -75,17 +98,17 @@
       <file leaf-file-name="TestProcurementPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestProcurementPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="67" column="35" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
+            <state relative-caret-position="204">
+              <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProcurementPage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProcurementPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+            <state relative-caret-position="493">
+              <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -93,7 +116,7 @@
       <file leaf-file-name="LoggerConsole.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Helpers/LoggerConsole.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="306">
               <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
@@ -144,6 +167,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="fspiridonov" />
+      </list>
+    </option>
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -199,9 +227,9 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Runners/Runner.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestAutorizationPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/AutorizationPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestProcurementPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java" />
       </list>
     </option>
   </component>
@@ -289,6 +317,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="KoTClone" type="58d84e3e:PackageViewProjectNode" />
+              <item name="KoT" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="KoTClone" type="58d84e3e:PackageViewProjectNode" />
+              <item name="KoT" type="616d4139:PackageViewModuleNode" />
+              <item name="ru.ksodd" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="KoTClone" type="58d84e3e:PackageViewProjectNode" />
+              <item name="KoT" type="616d4139:PackageViewModuleNode" />
+              <item name="ru.ksodd" type="1f31426a:PackageElementNode" />
+              <item name="Features" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -344,28 +394,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="KoTClone" type="58d84e3e:PackageViewProjectNode" />
-              <item name="KoT" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="KoTClone" type="58d84e3e:PackageViewProjectNode" />
-              <item name="KoT" type="616d4139:PackageViewModuleNode" />
-              <item name="ru.ksodd" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="KoTClone" type="58d84e3e:PackageViewProjectNode" />
-              <item name="KoT" type="616d4139:PackageViewModuleNode" />
-              <item name="ru.ksodd" type="1f31426a:PackageElementNode" />
-              <item name="Features" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -413,118 +441,6 @@
       <recent name="C:\Users\Boriskin_SA\Downloads\Telegram Desktop\KoTClone\KoTClone\src\test\java\ru\ksodd\Runners\type_tests\Initiative_MVK" />
       <recent name="C:\Users\Boriskin_SA\Downloads\Telegram Desktop\KoTClone\KoTClone\src\test\java\ru\ksodd\Features\Type_Tests" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/Check_Boxes_1_Page.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/cucumber-pretty/report.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/txt.txt</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -883,13 +799,17 @@
       <option name="project" value="LOCAL" />
       <updated>1526369507798</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="[+] В фиче stage1 добавлены дополнительные параметры scenario outline">
+      <created>1526388573341</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1526388573341</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Runner - 2018.05.15 at 11h 11m 26s.xml">
-      <configuration name="Runner" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Runner - 2018.05.15 at 11h 15m 26s.xml">
       <configuration name="Runner" configurationId="JUnit" />
     </history-entry>
@@ -917,6 +837,9 @@
     <history-entry file="Runner - 2018.05.15 at 15h 23m 35s.xml">
       <configuration name="Runner" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Runner - 2018.05.15 at 16h 25m 53s.xml">
+      <configuration name="Runner" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -929,7 +852,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.26823795" />
@@ -944,13 +866,13 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32659933" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48312885" visible="true" weight="0.12633263" />
-      <window_info id="Structure" order="6" sideWeight="0.51735014" weight="0.18710022" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48312885" visible="true" weight="0.12739871" />
+      <window_info id="Structure" order="6" sideWeight="0.51735014" side_tool="true" weight="0.18710022" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24946696" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="4" sideWeight="0.51687115" side_tool="true" weight="0.20904645" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.48958334" visible="true" weight="0.059912853" />
+      <window_info active="true" anchor="bottom" id="Debug" order="5" sideWeight="0.48958334" visible="true" weight="0.39651415" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="6" sideWeight="0.16719243" side_tool="true" weight="0.10696822" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
@@ -1025,7 +947,8 @@
     <MESSAGE value="[+] Клик на поле Пароль с помощью кнопки TAB" />
     <MESSAGE value="[+] Правки" />
     <MESSAGE value="[+] Правки;  Добавлена проверка на закрытие формы" />
-    <option name="LAST_COMMIT_MESSAGE" value="[+] Правки;  Добавлена проверка на закрытие формы" />
+    <MESSAGE value="[+] В фиче stage1 добавлены дополнительные параметры scenario outline" />
+    <option name="LAST_COMMIT_MESSAGE" value="[+] В фиче stage1 добавлены дополнительные параметры scenario outline" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1228,24 +1151,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#Edit.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/InitiativePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="104" column="112" selection-start-line="104" selection-start-column="112" selection-end-line="104" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#2Check-Boxes.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1309,49 +1218,63 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestAutorizationPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/AutorizationPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="527">
           <caret line="45" column="100" selection-start-line="45" selection-start-column="100" selection-end-line="45" selection-end-column="100" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Helpers/LoggerConsole.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="306">
           <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestProcurementPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="67" column="35" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1Check-Boxes.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#2Check-Boxes.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#Edit.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="187">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestProcurementPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
         </state>
       </provider>
     </entry>
