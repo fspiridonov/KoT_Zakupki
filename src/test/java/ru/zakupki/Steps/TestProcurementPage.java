@@ -26,13 +26,13 @@ public class TestProcurementPage {
 
     @When("^Заполняет поле 'Наименование'$")
     public static void fillName() throws InterruptedException, IOException {
-        sleep(4000);
+        sleep(1000);
         ProcurementPage.fillname(PackagePage.timeNameVar);
     }
 
     @When("^Клик на поле 'Выбираем поставщика'$")
     public static void clickVendorSelection() throws InterruptedException, IOException {
-        sleep(4000);
+        sleep(1000);
         ProcurementPage.Clickvendorselection();
     }
 
@@ -44,7 +44,7 @@ public class TestProcurementPage {
 
     @When("^Клик на поле 'Расчет НМЦК'$")
     public static void clickDesignNMCK() throws InterruptedException, IOException {
-        sleep(4000);
+        sleep(1000);
         ProcurementPage.clickvaluation();
     }
 
@@ -55,7 +55,7 @@ public class TestProcurementPage {
 
     @When("^Клик на поле 'Закон'$")
     public static void clickOrdinance() throws InterruptedException, IOException {
-        sleep(4000);
+        sleep(1000);
         ProcurementPage.clickordinance();
     }
 
@@ -66,25 +66,26 @@ public class TestProcurementPage {
 
     @When("^Заполняет поле 'Сумма в рублях'$")
     public static void fillSumma() throws InterruptedException, IOException {
-        sleep(4000);
-        ProcurementPage.fillsumma("1000");
+        sleep(1000);
+        ProcurementPage.fillsumma("100000");
     }
 
     @When("^Заполняет следующее поле 'Сумма в рублях'$")
     public static void fillSummanxt() throws InterruptedException, IOException {
-        sleep(4000);
-        ProcurementPage.fillsummanxt("1000");
+        sleep(1000);
+        ProcurementPage.fillsummanxt("50000");
     }
 
     @When("^Клик на кнопку 'Сохранить'$")
     public static void sаve() throws InterruptedException, IOException {
-        sleep(4000);
+        sleep(1000);
         ButtonsUtil.clickSpanButton("Сохранить");
+
     }
 
     @When("^Кликает на кнопку 'Добавить'$")
     public static void clickAdd() throws InterruptedException, IOException {
-        sleep(4000);
+        sleep(1000);
         ButtonsUtil.clickSpanButton("add");
     }
 
@@ -102,9 +103,14 @@ public class TestProcurementPage {
 
     @When("^Кликает на календарь$")
     public static void clickCalendar() throws InterruptedException, IOException {
-        sleep(2000);
-//        ProcurementPage.Clickcalendar("29");
         sleep(1000);
+        ProcurementPage.clickCalendar("29");
+        sleep(1000);
+    }
+
+    @When("^Проверка на закрытие формы 'Форма создания'$")
+    public static void closeForm() throws IOException {
+        ProcurementPage.testCloseForm();
     }
 
 }

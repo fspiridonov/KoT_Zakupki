@@ -1,6 +1,7 @@
 package ru.zakupki.Pages;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.SelenideElement;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -130,16 +131,12 @@ public class ProcurementPage {
 
     public static void fillsummanxt(String summa) throws FileNotFoundException, IOException {
 //        ввводит сумму при добавлении последующей суммы
-        WebElement name = $(By.xpath("//div[@class='flex title xs4' and text()=2019]/ancestor::div[1]/div[@class='flex xs4'][1]"));
+        WebElement name = $(By.xpath("//div[@class='input-group__input']/input[@aria-label='2018']"));
         sleep(1500);
-
         try {
-
             name.isDisplayed();
-            actions().click(name).sendKeys(summa).perform();
+            actions().doubleClick(name).sendKeys(summa).perform();
             LoggerConsole.LoggNotError("Заполнение поля сумма в рублях");
-
-
         } catch (Error e) {
             LoggerConsole.Logg("Не смог заполнить поле сумма в рублях");
         }
@@ -147,29 +144,29 @@ public class ProcurementPage {
 
 
     //    public static void Clickcalendar( String data, String numb, String mon ) throws FileNotFoundException, IOException {
-    public static void Clickcalendar(String numb, String mon,String year) throws FileNotFoundException, IOException {
+    public static void clickCalendar(String numb) throws FileNotFoundException, IOException {
 // Клик на календарь и введение даты
         WebElement datamer = $(By.xpath("//div[2]/div/div/div/div/div/div/div/button[@class='elevation-1 btn btn--small']"));
         WebElement datamer2 = $(By.xpath("//div[7]/div/div/div/div/div/div/div/button[@class='elevation-1 btn btn--small']"));
         //        WebElement datamer = $(By.xpath("//div[@class='flex xs8']//div[@class='flex'][" + numb + "]//div[@class='input-group__input']"));
         sleep(1500);
         WebElement numB = $(By.xpath("//button[@class='btn btn--flat btn--floating']/div[text()='" + numb + "']"));
-        WebElement month = $(By.xpath("//button/div[text()='" + mon + "']"));
-        WebElement years = $(By.xpath("//ul[@class='date-picker-years']/li[text()='" + year + "']"));
-//WebElement month = $(By.xpath("//button[@class='btn btn--flat btn--outline accent--text']/div[text()='" + mon + "']"));
+        //        WebElement month = $(By.xpath("//button/div[text()='" + mon + "']"));
+        //        WebElement years = $(By.xpath("//ul[@class='date-picker-years']/li[text()='" + year + "']"));
+        //        WebElement month = $(By.xpath("//button[@class='btn btn--flat btn--outline accent--text']/div[text()='" + mon + "']"));
         try {
             datamer.isDisplayed();
-//                actions().click(datamer).click(month).perform();
+        //        actions().click(datamer).click(month).perform();
             actions().click(datamer).perform();
             sleep(2000);
             actions().click(numB).perform();
             actions().click(datamer2).perform();
             sleep(2000);
             actions().click(numB).perform();
-            LoggerConsole.LoggNotError("клик на календрь");
+            LoggerConsole.LoggNotError("клик на календарь");
 
         } catch (Error e) {
-            LoggerConsole.Logg("Не смог кликнуть на календрь");
+            LoggerConsole.Logg("Не смог кликнуть на календарь");
         }
     }
 
@@ -193,13 +190,21 @@ public class ProcurementPage {
 //        клик на закон
         WebElement valuation = $(By.xpath("//label[text()='" + txt + "']"));
         try {
-
             actions().click(valuation).perform();
-//            actions().sendKeys(fieldLogin,login).perform();
-
             LoggerConsole.LoggNotError("выбирает закон");
         } catch (Error e) {
             LoggerConsole.Logg("не смог выбирать закон");
+        }
+    }
+
+    public static void testCloseForm() throws IOException {
+        //проверка на закрытие формы
+        WebElement form = $(By.xpath("//nav[@class='toolbar toolbar--card toolbar--prominent']/div/*[text()='Форма создания']"));
+        try {
+            ((SelenideElement) form).should(Condition.not(Condition.visible));
+            LoggerConsole.LoggNotError("Форма закрылась после кнопки 'Сохранить'");
+        } catch (Error e) {
+            LoggerConsole.Logg("Форма  НЕ закрылась после кнопки 'Сохранить'");
         }
     }
 
