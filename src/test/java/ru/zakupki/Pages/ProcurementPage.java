@@ -26,7 +26,7 @@ public class ProcurementPage {
         WebElement name = $(By.xpath("//textarea[@name='name']"));
         sleep(1500);
         Random random = new Random();
-        int num = random.nextInt(50);
+        int num = random.nextInt(99);
         try {
 
             name.isDisplayed();
@@ -43,7 +43,7 @@ public class ProcurementPage {
         WebElement name = $(By.xpath("//textarea[@name='reason']"));
         sleep(1500);
         Random random = new Random();
-        int num = random.nextInt(50);
+        int num = random.nextInt(99);
         try {
             name.isDisplayed();
             actions().click(name).sendKeys(txt+num).perform();

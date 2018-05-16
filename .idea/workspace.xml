@@ -4,7 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java" description="sleep(1600);" line="92" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4df23628-aa4c-4340-aee3-a6fa91811095" name="Default" comment="[+] Правки">
+    <list default="true" id="4df23628-aa4c-4340-aee3-a6fa91811095" name="Default" comment="[+] добавлен дополнительный рандом для создания названия документа">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
@@ -107,8 +107,8 @@
       <file leaf-file-name="ProcurementPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+            <state relative-caret-position="799">
+              <caret line="63" column="31" lean-forward="true" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -410,7 +410,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.desktop/sun/awt/windows/WToolkit.java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/KoTClone" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -806,7 +806,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526388573341</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="[+] добавлен дополнительный рандом для создания названия документа">
+      <created>1526391354835</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1526391354835</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -852,6 +859,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.26823795" />
@@ -872,7 +880,7 @@
       <window_info id="UI Designer" order="3" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="4" sideWeight="0.51687115" side_tool="true" weight="0.20904645" />
-      <window_info active="true" anchor="bottom" id="Debug" order="5" sideWeight="0.48958334" visible="true" weight="0.39651415" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.48958334" weight="0.39651415" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="6" sideWeight="0.16719243" side_tool="true" weight="0.10696822" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
@@ -948,7 +956,8 @@
     <MESSAGE value="[+] Правки" />
     <MESSAGE value="[+] Правки;  Добавлена проверка на закрытие формы" />
     <MESSAGE value="[+] В фиче stage1 добавлены дополнительные параметры scenario outline" />
-    <option name="LAST_COMMIT_MESSAGE" value="[+] В фиче stage1 добавлены дополнительные параметры scenario outline" />
+    <MESSAGE value="[+] добавлен дополнительный рандом для создания названия документа" />
+    <option name="LAST_COMMIT_MESSAGE" value="[+] добавлен дополнительный рандом для создания названия документа" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1273,8 +1282,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+        <state relative-caret-position="799">
+          <caret line="63" column="31" lean-forward="true" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
         </state>
       </provider>
     </entry>
