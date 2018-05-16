@@ -69,11 +69,11 @@ public class TestHelper {
     }
     public static void loadFilenoeditnmck(String file) throws AWTException {
 //        Загружаю Нередактируемый файл
-        $(By.xpath("//input[@name='file_19']")).sendKeys("C:\\Users\\Boriskin_SA\\Downloads\\Telegram Desktop\\KoTClone\\KoTClone\\src\\test\\repository\\Files\\" + file);
+        $(By.xpath("//input[@name='file_14']")).sendKeys("C:\\Users\\Boriskin_SA\\Downloads\\Telegram Desktop\\KoTClone\\KoTClone\\src\\test\\repository\\Files\\" + file);
     }
     public static void loadFileeditnmck(String file) throws AWTException {
 //        Загружаю Нередактируемый файл
-        $(By.xpath("//input[@name='file_19_copy']")).sendKeys("C:\\Users\\Boriskin_SA\\Downloads\\Telegram Desktop\\KoTClone\\KoTClone\\src\\test\\repository\\Files\\" + file);
+        $(By.xpath("//input[@name='file_14_copy']")).sendKeys("C:\\Users\\Boriskin_SA\\Downloads\\Telegram Desktop\\KoTClone\\KoTClone\\src\\test\\repository\\Files\\" + file);
     }
 
     public static void loadFilenoeditncommision(String file) throws AWTException {

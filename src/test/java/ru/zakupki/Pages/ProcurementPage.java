@@ -119,7 +119,7 @@ public class ProcurementPage {
     public static void fillsumma(String summa) throws FileNotFoundException, IOException {
 //        вводет сумму
         WebElement name = $(By.xpath("//input[@aria-label='Сумма']"));
-        sleep(1500);
+        sleep(2000);
 
         try {
 

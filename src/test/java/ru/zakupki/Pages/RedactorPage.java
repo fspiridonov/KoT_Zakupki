@@ -1,5 +1,6 @@
 package ru.zakupki.Pages;
 
+import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -16,9 +17,8 @@ public class RedactorPage {
     public static void clicklastelem() throws IOException {
 //входит внутрь тестовой закупки
         WebElement name = $(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div[@class='card__text']")).doubleClick();
-        sleep(1500);
-        try {
-            name.isDisplayed();
+        sleep(2000);
+            try {
             actions().doubleClick(name).perform();
             LoggerConsole.LoggNotError("входит внутрь тестовой закупки");
         } catch (Error e) {
@@ -28,12 +28,17 @@ public class RedactorPage {
 
     public static void fillsumma(String txt) throws IOException {
 //Заполнение поля сумма
-        WebElement name = $(By.xpath("//div[@class='flex title xs2' and text() = 2018]/ancestor::div[1]//input"));
-        sleep(1500);
+ //       WebElement name = $(By.xpath("//div[@class='flex title xs2' and text() = 2018]/ancestor::div[1]//input[@aria-label='Сумма']"));
+   WebElement name = $(By.xpath("//input[@type='number']"));
+        sleep(2000);
 
         try {
-            name.isDisplayed();
-            actions().doubleClick(name).sendKeys(Keys.DELETE).sendKeys(txt).perform();
+            actions().click(name).perform();
+            actions().sendKeys(Keys.CONTROL+"a").sendKeys(Keys.DELETE).build().perform();
+            sleep(2000);
+            ((SelenideElement) name).setValue(txt);
+            actions().sendKeys(txt).build().perform();
+
             LoggerConsole.LoggNotError("Заполнение поля сумма");
 
         } catch (Error e) {
@@ -102,7 +107,7 @@ public class RedactorPage {
 
     public static void clickarticle() throws IOException {
 //заполняем поле причины
-        WebElement name = $(By.xpath("//div[@class='flex title xs2' and text() = 2018]/ancestor::div[1]//div[@class='flex xs8']/select"));
+        WebElement name = $(By.xpath("//div[@class='flex title xs2' and text() = 2018]/ancestor::div[1]//div[@class='input-group__selections']/input"));
         sleep(1500);
 
         try {

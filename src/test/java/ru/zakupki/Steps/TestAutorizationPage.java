@@ -22,7 +22,6 @@ public class TestAutorizationPage {
     @When("^вводим пароль \"(.*)\"$")
     public static void loginP(String pas) throws IOException, InterruptedException {
         AutorizationPage.fillPassword(pas);
-        sleep(1500);
         ButtonsUtil.clickSpanButton("Войти");
     }
 

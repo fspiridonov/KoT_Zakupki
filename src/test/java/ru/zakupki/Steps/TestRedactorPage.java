@@ -29,37 +29,37 @@ public class TestRedactorPage {
 
     @When("^Клик на редактирование закупки$")
     public static void edit() throws InterruptedException, IOException {
-        sleep(4000);
+        sleep(1500);
         ButtonsUtil.clickSpanButton("edit");
     }
 
     @When("^Клик на второе редактирование закупки$")
     public static void edit2() throws InterruptedException, IOException {
-        sleep(4000);
+        sleep(1500);
         RedactorPage.clickedit();
     }
 
     @When("^Заполняет поле 'Сумма'$")
     public static void FillSumma() throws InterruptedException, IOException {
-        sleep(4000);
-        RedactorPage.fillsumma("100000");
+        sleep(3000);
+        RedactorPage.fillsumma("10000");
     }
 
     @When("^Заполняет второе поле 'Сумма' за следующий год$")
     public static void FillSummanxt() throws InterruptedException, IOException {
-        sleep(4000);
+        sleep(1500);
         RedactorPage.fillsummanxt("1000");
     }
 
     @When("^Клик на поле 'Статья'$")
     public static void clickArticle() throws InterruptedException, IOException {
-        sleep(4000);
+        sleep(1500);
         RedactorPage.clickarticle();
     }
 
     @When("^Клик на второе поле 'Статья'$")
     public static void clickArticleNXT() throws InterruptedException, IOException {
-        sleep(4000);
+        sleep(1500);
         RedactorPage.clickarticlenxt();
     }
 
@@ -76,31 +76,31 @@ public class TestRedactorPage {
 
     @When("^Клик на кнопку 'Сохранить '$")
     public static void Seve() throws InterruptedException, IOException {
-        sleep(4000);
+        sleep(1500);
         ButtonsUtil.clickSpanButton("Сохранить");
     }
 
     @When("^Заполняем поле Наименование$")
     public static void name() throws InterruptedException, IOException {
-        sleep(4000);
+        sleep(1500);
         RedactorPage.fillname(PackagePage.timeNameVar);
     }
 
     @When("^Заполняем поле Обоснование$")
     public static void Justification() throws InterruptedException, IOException {
-        sleep(4000);
+        sleep(1500);
         RedactorPage.fillreason(PackagePage.timeNameVar);
     }
 
     @When("^Заполняем поле Ответственный$")
     public static void fio() throws InterruptedException, IOException {
-        sleep(4000);
+        sleep(1500);
         RedactorPage.fillfio("Иван Иванович Иванов");
     }
 
     @When("^Клик на поле Способ расчета НМЦК$")
     public static void ClickDesignNMCK() throws InterruptedException, IOException {
-        sleep(4000);
+        sleep(1500);
         RedactorPage.clickvaluation();
     }
 
@@ -111,19 +111,19 @@ public class TestRedactorPage {
 
     @When("^Клик на поле Тип закупки")
     public static void ClickType() throws InterruptedException, IOException {
-        sleep(4000);
+        sleep(1500);
         RedactorPage.clicktype();
     }
 
     @When("^Выбираем Тип закупк \"(.*)\" из выпадающего списка")
     public static void SelecteType(String val) throws InterruptedException, IOException {
-        sleep(4000);
+        sleep(1500);
         RedactorPage.selecttype(val);
     }
 
     @When("^Клик на поле закон$")
     public static void ClickOrdinance() throws InterruptedException, IOException {
-        sleep(4000);
+        sleep(1500);
         RedactorPage.clickordinance();
     }
 
