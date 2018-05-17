@@ -10,6 +10,7 @@ import ru.zakupki.Helpers.ButtonsUtil;
 import ru.zakupki.Helpers.LoggerConsole;
 import ru.zakupki.Helpers.TestHelper;
 
+import java.awt.*;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Random;
@@ -210,6 +211,16 @@ public class ProcurementPage {
             LoggerConsole.Logg("Форма  НЕ закрылась после кнопки 'Сохранить'");
         }
     }
+    //перенос документов
+    public static void tranfer(int idDrag, int idDrop) throws AWTException {
+        //card - поиск последней карточки
+        WebElement card = $(By.xpath("//div[@data-id='container-id-"+idDrag+"']//div[@class='kanban-column__dnd-item smooth-dnd-draggable-wrapper'][last()]"));
+        //stage - сам этап
+        WebElement stage = $(By.xpath("//div[@data-id='container-id-"+idDrop+"']"));
+        actions().click(card).perform();
+        actions().dragAndDrop(card, stage).perform();
+    }
+
 
 }
 

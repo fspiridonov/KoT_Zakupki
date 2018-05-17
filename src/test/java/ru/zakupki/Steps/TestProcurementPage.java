@@ -114,5 +114,19 @@ public class TestProcurementPage {
         ProcurementPage.testCloseForm();
     }
 
+    @When("^Перенос с этапа Формирование комплекта документов на Внутреннее согласование$")
+    public static void transferCardZakupki1() throws AWTException, InterruptedException {
+        sleep(5000);
+        ProcurementPage.tranfer(1,2);
+        sleep(10000);
+    }
+
+    @When("^Перенос с этапа Внутреннее согласование на Внешнее согласование$")
+    public static void transferCardZakupki2() throws AWTException, InterruptedException {
+        sleep(5000);
+        ProcurementPage.tranfer(2,3);
+        sleep(10000);
+    }
+
 }
 

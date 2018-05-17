@@ -20,9 +20,9 @@ import static ru.zakupki.Helpers.LoggerConsole.LoggNotError;
 public class ButtonsUtil {
 
     public static void clickSpanButton(String text) throws FileNotFoundException, IOException {
-        WebElement txt = $(By.xpath("//button/div[@class='btn__content']/i[text()='" + text + "'] | //div[text()='" + text + "']"));
+        WebElement txt = $(By.xpath("//div[text()='" + text + "']"));
         try {
-            $(By.xpath("//button/div[@class='btn__content']/i[text()='" + text + "'] | //div[text()='" + text + "']")).should(Condition.visible);
+            $(By.xpath("//div[text()='" + text + "']")).should(Condition.visible);
             sleep(1000);
             actions().click(txt).perform();
             LoggNotError("Произошел клик на кнопку '" + text + "'");

@@ -2,9 +2,9 @@
 
 Feature: stage#1Check-Boxes
 
-  Scenario: Авторизация
-    When вводим логин "mnn"
-    And вводим пароль "1qaz@WSX"
+#  Scenario: Авторизация
+#    When вводим логин "mnn"
+#    And вводим пароль "1qaz@WSX"
 
   Scenario: Тестовый прогон
 
@@ -64,5 +64,6 @@ Feature: stage#1Check-Boxes
     When Прикрепление редактируемых файлов 'Проект контракта'
     When Клик на кнопку 'Подтвердить'
 
-  Scenario: Выход из системы
-#    When logout
+    When Перенос с этапа Формирование комплекта документов на Внутреннее согласование
+
+
