@@ -2,9 +2,9 @@
 
 Feature: stage#1Check-Boxes
 
-#  Scenario: Авторизация
-#    When вводим логин "mnn"
-#    And вводим пароль "1qaz@WSX"
+  Scenario: Авторизация
+    When вводим логин "mnn"
+    And вводим пароль "1qaz@WSX"
 
   Scenario: Тестовый прогон
 

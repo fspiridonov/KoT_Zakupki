@@ -18,9 +18,9 @@ public class Check_Boxes_1_Page {
         WebElement name = $(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div//div[text()='" + val + "']"));
         sleep(2000);
         try {
-            name.isDisplayed();
+  //          name.isDisplayed();
             sleep(3000);
-            actions().doubleClick(name).perform();
+            actions().click(name).perform();
             LoggerConsole.LoggNotError("входит внутрь чекбокса '" + val + "' ");
         } catch (Error e) {
             LoggerConsole.Logg("Не смог войти внутрь тестовой закупки '" + val + "' ");
@@ -77,10 +77,9 @@ public class Check_Boxes_1_Page {
 //заполняем поле причины
         //todo
         WebElement name = $(By.xpath("//*[@id='form-task']/div/div/button[1]/div"));
-        sleep(1500);
+        sleep(2000);
 
         try {
-            name.isDisplayed();
             actions().click(name).perform();
             LoggerConsole.LoggNotError("клик на кнопку создать");
         } catch (Error e) {

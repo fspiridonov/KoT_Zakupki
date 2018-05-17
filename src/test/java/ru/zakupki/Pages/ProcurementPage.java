@@ -217,7 +217,6 @@ public class ProcurementPage {
         WebElement card = $(By.xpath("//div[@data-id='container-id-"+idDrag+"']//div[@class='kanban-column__dnd-item smooth-dnd-draggable-wrapper'][last()]"));
         //stage - сам этап
         WebElement stage = $(By.xpath("//div[@data-id='container-id-"+idDrop+"']"));
-        actions().click(card).perform();
         actions().dragAndDrop(card, stage).perform();
     }
 
