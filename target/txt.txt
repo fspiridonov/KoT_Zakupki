@@ -1,6 +1,6 @@
-@stage#1Check-Boxes
-Feature: stage#1Check-Boxes
+@stage#Edit
+Feature: stage#Edit
 
-  Scenario: Авторизация          [90m# stage#1Check-Boxes.feature:5[0m
-    [32mWhen [0m[32mвводим логин "[0m[32m[1mmnn[0m[32m"[0m      [90m# TestAutorizationPage.loginL(String)[0m
-    [32mAnd [0m[32mвводим пароль "[0m[32m[1m1qaz@WSX[0m[32m"[0m [90m# TestAutorizationPage.loginP(String)[0m
+  Scenario: Авторизация         [90m# stage#Edit.feature:5[0m
+    [32mWhen [0m[32mвводим логин "[0m[32m[1mmnn[0m[32m"[0m     [90m# TestAutorizationPage.loginL(String)[0m
+    [32mAnd [0m[32mвводим пароль "[0m[32m[1m1qaz@WS[0m[32m"[0m [90m# TestAutorizationPage.loginP(String)[0m
