@@ -25,9 +25,9 @@ import static com.codeborne.selenide.Selenide.open;
         glue = "ru/zakupki/Steps",
 //        tags = {""},
 //        tags = {"@smokeTest#1,@smokeTest#2,@smokeTest#3"}, //Запустить несколько фич
-        tags = {"@stage#Edit"},
+        tags = {"@stage#1, @stage#1Check-Boxes, @stage#2Check-Boxes"},
         format = {"json:target/cucumber.json","html:target/site/cucumber-pretty"},
-        plugin = {"pretty:target/txt.txt"},
+//        plugin = {"pretty:target/txt.txt"},
         strict = true
         )
 

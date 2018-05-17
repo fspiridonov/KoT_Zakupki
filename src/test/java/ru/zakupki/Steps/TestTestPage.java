@@ -46,7 +46,7 @@ public class TestTestPage {
             InitiativePage.workDescriptionInit("Новая инициатива", str);
             Selenide.sleep(1000);
             InitiativePage.selectImportance(importance[i]);
-            TestHelper.loadFile("Initiative.txt");
+//            TestHelper.loadFile("Initiative.txt");
             ButtonsUtil.clickSpanButton("Создать");
 //            Проверяю данные
             Selenide.sleep(2000); //[После удаления инициатив]

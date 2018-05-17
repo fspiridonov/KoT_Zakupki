@@ -90,7 +90,7 @@ public class TestInitiativePage {
 
     @When("^Прикрепляем файл$")
     public static void LoadFileInit () {
-        TestHelper.loadFile("Initiative.txt");
+//        TestHelper.loadFile("Initiative.txt");
     }
 
 
@@ -129,7 +129,7 @@ public class TestInitiativePage {
         InitiativePage.editDescription();
         InitiativePage.selectImportance("Важная");
         ButtonsUtil.clickSpanButton("Изменить");
-        TestHelper.loadFile("Initiative_Edit.txt");
+//        TestHelper.loadFile("Initiative_Edit.txt");
         ButtonsUtil.clickSpanButton("Отмена");
 
     }

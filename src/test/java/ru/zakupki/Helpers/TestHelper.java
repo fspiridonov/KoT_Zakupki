@@ -28,6 +28,7 @@ import static ru.zakupki.Helpers.StorageString.contentOfWorks.cWork;
 
 public class TestHelper {
 
+
     public static void assertScreen() {
 //        Делает скриншот с именем файла AssertionError, каждый раз затирает старый
         String name = "AssertionError_" + String.valueOf(System.currentTimeMillis());
@@ -37,68 +38,8 @@ public class TestHelper {
 
     public static void loadFile(String file) {
 //        Загружаю файл file кнопкой
-//        $(By.xpath("//h5[text()='Загрузить файл']/ancestor::div[3]//input[@type='file']")).sendKeys("C:\\Users\\mdivani_MG\\Documents\\mgtniip\\KoT\\src\\test\\repository\\Files\\" + file);
+        $(By.xpath("//input[@type='file']")).uploadFile(new File("src/test/repository/Files/" + file));
 
-        $(By.xpath("//input[@type='file']")).uploadFile(new File("C:\\Users\\Boriskin_SA\\Downloads\\Telegram Desktop\\KoTClone\\KoTClone\\src\\test\\repository\\Files\\" + file));
-
-    }
-    public static void loadFilenoedit(String file) throws AWTException {
-//        Загружаю Нередактируемый файл
-//        $(By.xpath("//h5[text()='Загрузить файл']/ancestor::div[3]//input[@type='file']")).sendKeys("C:\\Users\\mdivani_MG\\Documents\\mgtniip\\KoT\\src\\test\\repository\\Files\\" + file);
- //       $(By.xpath("//input[@aria-label='Нередактируемый файл']")).sendKeys("src\\test\\repository\\Files\\" + file);
- //       $(By.xpath("//input[@aria-label='Нередактируемый файл']")).click();
-//
-
-        $(By.xpath("//input[@name='file_1']")).sendKeys("C:\\Users\\Boriskin_SA\\Downloads\\Telegram Desktop\\KoTClone\\KoTClone\\src\\test\\repository\\Files\\" + file);
-
-    }
-    public static void loadFileedit(String file) {
-//        Загружаю Редактируемый файл
-//        $(By.xpath("//h5[text()='Загрузить файл']/ancestor::div[3]//input[@type='file']")).sendKeys("C:\\Users\\mdivani_MG\\Documents\\mgtniip\\KoT\\src\\test\\repository\\Files\\" + file);
-        $(By.xpath("//input[@name='file_1_copy']")).uploadFile(new File("src\\test\\repository\\Files\\" + file));
-    }
-    public static void loadFilenoedittz(String file) throws AWTException {
-//        Загружаю Нередактируемый файл
-        $(By.xpath("//input[@name='file_40']")).sendKeys("C:\\Users\\Boriskin_SA\\Downloads\\Telegram Desktop\\KoTClone\\KoTClone\\src\\test\\repository\\Files\\" + file);
-
-    }
-    public static void loadFileedittz(String file) throws AWTException {
-//        Загружаю Нередактируемый файл
-        $(By.xpath("//input[@name='file_40_copy']")).sendKeys("C:\\Users\\Boriskin_SA\\Downloads\\Telegram Desktop\\KoTClone\\KoTClone\\src\\test\\repository\\Files\\" + file);
-
-    }
-    public static void loadFilenoeditnmck(String file) throws AWTException {
-//        Загружаю Нередактируемый файл
-        $(By.xpath("//input[@name='file_14']")).sendKeys("C:\\Users\\Boriskin_SA\\Downloads\\Telegram Desktop\\KoTClone\\KoTClone\\src\\test\\repository\\Files\\" + file);
-    }
-    public static void loadFileeditnmck(String file) throws AWTException {
-//        Загружаю Нередактируемый файл
-        $(By.xpath("//input[@name='file_14_copy']")).sendKeys("C:\\Users\\Boriskin_SA\\Downloads\\Telegram Desktop\\KoTClone\\KoTClone\\src\\test\\repository\\Files\\" + file);
-    }
-
-    public static void loadFilenoeditncommision(String file) throws AWTException {
-//        Загружаю Нередактируемый файл
-        $(By.xpath("//input[@name='file_11']")).sendKeys("C:\\Users\\Boriskin_SA\\Downloads\\Telegram Desktop\\KoTClone\\KoTClone\\src\\test\\repository\\Files\\" + file);
-    }
-    public static void loadFileeditncommision(String file) throws AWTException {
-//        Загружаю Нередактируемый файл
-        $(By.xpath("//input[@name='file_11_copy']")).sendKeys("C:\\Users\\Boriskin_SA\\Downloads\\Telegram Desktop\\KoTClone\\KoTClone\\src\\test\\repository\\Files\\" + file);
-    }
-    public static void loadFilenoeditpzpg(String file) throws AWTException {
-//        Загружаю Нередактируемый файл
-        $(By.xpath("//input[@name='file_42']")).sendKeys("C:\\Users\\Boriskin_SA\\Downloads\\Telegram Desktop\\KoTClone\\KoTClone\\src\\test\\repository\\Files\\" + file);
-    }
-    public static void loadFileeditpzpg(String file) throws AWTException {
-//        Загружаю Нередактируемый файл
-        $(By.xpath("//input[@name='file_42_copy']")).sendKeys("C:\\Users\\Boriskin_SA\\Downloads\\Telegram Desktop\\KoTClone\\KoTClone\\src\\test\\repository\\Files\\" + file);
-    }
-    public static void loadFilenoeditprocontr(String file) throws AWTException {
-//        Загружаю Нередактируемый файл
-        $(By.xpath("//input[@name='file_7']")).sendKeys("C:\\Users\\Boriskin_SA\\Downloads\\Telegram Desktop\\KoTClone\\KoTClone\\src\\test\\repository\\Files\\" + file);
-    }
-    public static void loadFileeditprocontr(String file) throws AWTException {
-//        Загружаю Нередактируемый файл
-        $(By.xpath("//input[@name='file_7_copy']")).sendKeys("C:\\Users\\Boriskin_SA\\Downloads\\Telegram Desktop\\KoTClone\\KoTClone\\src\\test\\repository\\Files\\" + file);
     }
 
     public static void scrollToBottom(String columnNum, String columnType) throws AWTException {
@@ -205,8 +146,8 @@ public class TestHelper {
         Robot robot = new Robot();
         robot.keyPress(KeyEvent.VK_F11);
         sleep(2000);
-        WebElement x1 = $(By.xpath("//td[@data-bem='{\"c-kanban__column\":{\"kot_id\":\"" +idDrag + "\"}}']/div/div[@data-bem]/div[last()]/div[2]"));
-        WebElement x2 = $(By.xpath("//td[@data-bem='{\"c-kanban__column\":{\"kot_id\":\"" +idDrop + "\"}}']/div/div[@data-bem]/div[last()]/div[2]"));
+        WebElement x1 = $(By.xpath("//td[@data-bem='{\"c-kanban__column\":{\"kot_id\":\"" + idDrag + "\"}}']/div/div[@data-bem]/div[last()]/div[2]"));
+        WebElement x2 = $(By.xpath("//td[@data-bem='{\"c-kanban__column\":{\"kot_id\":\"" + idDrop + "\"}}']/div/div[@data-bem]/div[last()]/div[2]"));
 //        $(By.xpath("//td[@data-bem='{\"c-kanban__column\":{\"kot_id\":\"" + idDrag + "\"}}']/div/div/div[last()-2]")).click();
 //        sleep(1500);
 //        actions().sendKeys(Keys.ESCAPE).build().perform();
@@ -229,13 +170,17 @@ public class TestHelper {
 //        robot.waitForIdle();
         actions().click(x1).click(x2).perform();
         robot.setAutoDelay(1500);
-        try { $(By.xpath("//div[@class='b-block modal-dialog i-bem b-block_js_inited']//button[@aria-hidden='true']")).click();
-        } catch (Error e){}
+        try {
+            $(By.xpath("//div[@class='b-block modal-dialog i-bem b-block_js_inited']//button[@aria-hidden='true']")).click();
+        } catch (Error e) {
+        }
 
         $(By.xpath(".//td[@data-bem='{\"c-kanban__column\":{\"kot_id\":\"" + idDrop + "\"}}']/div/div[@data-bem]/div[last()]/div[2]")).click();
         robot.setAutoDelay(1500);
-        try { $(By.xpath("//div[@class='b-block modal-dialog i-bem b-block_js_inited']//button[@aria-hidden='true']")).click();
-        } catch (Error e){}
+        try {
+            $(By.xpath("//div[@class='b-block modal-dialog i-bem b-block_js_inited']//button[@aria-hidden='true']")).click();
+        } catch (Error e) {
+        }
 
         Dimension fromSize = x1.getSize();
         Dimension toSize = x2.getSize();
@@ -243,7 +188,7 @@ public class TestHelper {
         int yCentreFrom = fromSize.height / 2;
         int xCentreTo = toSize.width / 2;
         int yCentreTo = toSize.height / 2;
-        Point fromLocation  = x1.getLocation();
+        Point fromLocation = x1.getLocation();
         Point toLocation = x2.getLocation();
         toLocation.x += xCentreTo;
         toLocation.y += yCentreTo;
@@ -252,8 +197,8 @@ public class TestHelper {
         robot.mouseMove(fromLocation.x, fromLocation.y);
         robot.mousePress(MouseEvent.BUTTON1_MASK);
         robot.setAutoDelay(1000);
-        robot.mouseMove(((toLocation.x - fromLocation.x)/2)+fromLocation.x,((toLocation.y - fromLocation.y)/2)+fromLocation.y);
-        robot.mouseMove(toLocation.x,toLocation.y);
+        robot.mouseMove(((toLocation.x - fromLocation.x) / 2) + fromLocation.x, ((toLocation.y - fromLocation.y) / 2) + fromLocation.y);
+        robot.mouseMove(toLocation.x, toLocation.y);
         robot.mouseRelease(MouseEvent.BUTTON1_MASK);
         robot.setAutoDelay(1000);
     }
@@ -273,7 +218,7 @@ public class TestHelper {
         int yCentreFrom = fromSize.height / 2;
         int xCentreTo = toSize.width / 2;
         int yCentreTo = toSize.height / 2;
-        Point fromLocation  = x1.getLocation();
+        Point fromLocation = x1.getLocation();
         Point toLocation = x2.getLocation();
         toLocation.x += xCentreTo;
         toLocation.y += yCentreTo;
@@ -282,8 +227,8 @@ public class TestHelper {
         robot.mouseMove(fromLocation.x, fromLocation.y);
         robot.mousePress(InputEvent.BUTTON1_MASK);
         robot.setAutoDelay(1000);
-        robot.mouseMove(((toLocation.x - fromLocation.x)/2)+fromLocation.x,((toLocation.y - fromLocation.y)/2)+fromLocation.y);
-        robot.mouseMove(toLocation.x,toLocation.y);
+        robot.mouseMove(((toLocation.x - fromLocation.x) / 2) + fromLocation.x, ((toLocation.y - fromLocation.y) / 2) + fromLocation.y);
+        robot.mouseMove(toLocation.x, toLocation.y);
         robot.mouseRelease(InputEvent.BUTTON1_MASK);
         robot.setAutoDelay(1000);
     }

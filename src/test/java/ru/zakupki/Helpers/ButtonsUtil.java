@@ -23,8 +23,8 @@ public class ButtonsUtil {
         WebElement txt = $(By.xpath("//div[text()='" + text + "']"));
         try {
 //            $(By.xpath("//div[text()='" + text + "']")).should(Condition.visible);
-            sleep(2000);
-            actions().click(txt).perform();
+            sleep(1000);
+            actions().doubleClick(txt).perform();
             LoggNotError("Произошел клик на кнопку '" + text + "'");
         } catch (Error e) {
             Logg("Не произошел клик на кнопку '" + text + "'");

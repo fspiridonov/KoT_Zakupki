@@ -30,7 +30,7 @@ public class ProcurementPage {
         int num = random.nextInt(99);
         try {
 
-            name.isDisplayed();
+
             actions().click(name).sendKeys(txt+num).perform();
             LoggerConsole.LoggNotError("Заполнение поля наименования");
 
@@ -213,6 +213,7 @@ public class ProcurementPage {
     }
     //перенос документов
     public static void tranfer(int idDrag, int idDrop) throws AWTException {
+        refresh();
         //card - поиск последней карточки
         WebElement card = $(By.xpath("//div[@data-id='container-id-"+idDrag+"']//div[@class='kanban-column__dnd-item smooth-dnd-draggable-wrapper'][last()]"));
         //stage - сам этап
@@ -220,6 +221,12 @@ public class ProcurementPage {
         actions().dragAndDrop(card, stage).perform();
     }
 
+    public static void clickNewZakupka(){
+        WebElement click = $(By.xpath("//div[@class='kanban-column'][1]/div[3]/a/div[@class='btn__content']"));
+        refresh();
+        sleep(3000);
+        actions().click(click).perform();
+    }
 
 }
 

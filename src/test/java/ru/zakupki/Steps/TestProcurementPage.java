@@ -91,13 +91,13 @@ public class TestProcurementPage {
     }
 
     @When("^Клик на кнопку 'Новая закупка'$")
-    public static void newIpurchase() throws IOException {
-        ButtonsUtil.clickSpanButton("Новая Закупка");
+    public static void newIpurchase() throws IOException, InterruptedException {
+        sleep(2000);
+        ProcurementPage.clickNewZakupka();
     }
 
     @Then("^Проверяет, что форма закрылась$")
     public static void estCloseWindow() throws InterruptedException, IOException {
-
         sleep(4000);
         TestHelper.testCloseWindowCreatInit("Новая инициатива");
     }
@@ -114,18 +114,11 @@ public class TestProcurementPage {
         ProcurementPage.testCloseForm();
     }
 
-    @When("^Перенос с этапа Формирование комплекта документов на Внутреннее согласование$")
-    public static void transferCardZakupki1() throws AWTException, InterruptedException {
-        sleep(5000);
+    @When("^Перенос карточки на след этап$")
+    public static void transferCardZakupki() throws AWTException, InterruptedException {
+        sleep(3000);
         ProcurementPage.tranfer(1,2);
-        sleep(10000);
-    }
-
-    @When("^Перенос с этапа Внутреннее согласование на Внешнее согласование$")
-    public static void transferCardZakupki2() throws AWTException, InterruptedException {
-        sleep(5000);
-        ProcurementPage.tranfer(2,3);
-        sleep(10000);
+        sleep(3000);
     }
 
 }

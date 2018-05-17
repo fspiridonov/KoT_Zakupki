@@ -43,6 +43,7 @@ public class TestCheck_boxes_1_Page {
     public static void ClickApprove() throws InterruptedException, IOException {
         ButtonsUtil.clickSpanButton("Подтвердить");
     }
+
     @When("^Клик на кнопку 'Согласовать'$")
     public static void Clickadd() throws InterruptedException, IOException {
         Check_Boxes_1_Page.Clickadd();
@@ -52,6 +53,7 @@ public class TestCheck_boxes_1_Page {
     public static void Send4approval() throws InterruptedException, IOException {
         Check_Boxes_1_Page.Clickadd();
     }
+
     @When("^Заполняет поле комментария$")
     public static void FeelCommnt() throws InterruptedException, IOException {
         Check_Boxes_1_Page.fillcommentariy("комментарий");
@@ -59,57 +61,70 @@ public class TestCheck_boxes_1_Page {
 
     @When("^Прикрепление нередактируемых файлов$")
     public static void LoadDontEditFile() throws InterruptedException, IOException, AWTException {
-        TestHelper.loadFilenoedit("1111.dgn");
+        sleep(2000);
+        TestHelper.loadFile("1111.dgn");
     }
+
     @When("^Прикрепление редактируемых файлов$")
     public static void LoadEditFile() throws InterruptedException, IOException {
-        TestHelper.loadFileedit("1111.dgn");
+        TestHelper.loadFile("1111.dgn");
     }
 
     @When("^Прикрепление нередактируемых файлов 'Формирование ТЗ'$")
     public static void LoadDontEditFileTZ() throws InterruptedException, IOException, AWTException {
-        TestHelper.loadFilenoedittz("1111.dgn");
+        TestHelper.loadFile("1111.dgn");
     }
+
     @When("^Прикрепление редактируемых файлов 'Формирование ТЗ'$")
     public static void LoadEditFileTZ() throws InterruptedException, IOException, AWTException {
-        TestHelper.loadFileedittz("1111.dgn");
+        TestHelper.loadFile("1111.dgn");
     }
+
     @When("^Прикрепление нередактируемых файлов 'Расчет НМЦК'$")
-        public static void LoadDontEditFileNMCK() throws InterruptedException, IOException, AWTException {
-            TestHelper.loadFilenoeditnmck("1111.dgn");
-        }
-        @When("^Прикрепление редактируемых файлов 'Расчет НМЦК'$")
-        public static void LoadEditFileNMCK() throws InterruptedException, IOException, AWTException {
-            TestHelper.loadFileeditnmck("1111.dgn");
+    public static void LoadDontEditFileNMCK() throws InterruptedException, IOException, AWTException {
+        TestHelper.loadFile("1111.dgn");
     }
+
+    @When("^Прикрепление редактируемых файлов 'Расчет НМЦК'$")
+    public static void LoadEditFileNMCK() throws InterruptedException, IOException, AWTException {
+        TestHelper.loadFile("1111.dgn");
+    }
+
     @When("^Прикрепление нередактируемых файлов 'Ценовая комиссия'$")
     public static void loadFilenoeditCommision() throws InterruptedException, IOException, AWTException {
-        TestHelper.loadFilenoeditncommision("1111.dgn");
+        TestHelper.loadFile("1111.dgn");
     }
+
     @When("^Прикрепление редактируемых файлов 'Ценовая комиссия'$")
     public static void loadFileeditCommision() throws InterruptedException, IOException, AWTException {
-        TestHelper.loadFileeditncommision("1111.dgn");
+        TestHelper.loadFile("1111.dgn");
     }
+
     @When("^Прикрепление нередактируемых файлов 'Заявка на всключение в ПЗ и ПГ'$")
     public static void loadFilenoeditPZPG() throws InterruptedException, IOException, AWTException {
-        TestHelper.loadFilenoeditpzpg("1111.dgn");
+        TestHelper.loadFile("1111.dgn");
     }
+
     @When("^Прикрепление редактируемых файлов 'Заявка на всключение в ПЗ и ПГ'$")
     public static void loadFileeditPZPG() throws InterruptedException, IOException, AWTException {
-        TestHelper.loadFileeditpzpg("1111.dgn");
+        TestHelper.loadFile("1111.dgn");
     }
+
     @When("^Прикрепление нередактируемых файлов 'Проект контракта'$")
     public static void loadFilenoeditProContract() throws InterruptedException, IOException, AWTException {
-        TestHelper.loadFilenoeditprocontr("1111.dgn");
+        TestHelper.loadFile("1111.dgn");
     }
+
     @When("^Прикрепление редактируемых файлов 'Проект контракта'$")
     public static void loadFileeditProContract() throws InterruptedException, IOException, AWTException {
-        TestHelper.loadFileeditprocontr("1111.dgn");
+        TestHelper.loadFile("1111.dgn");
     }
+
     @When("^Клик на кнопку 'Разработать нетиповое ТЗ'$")
     public static void CkickDevelopAtypical() throws InterruptedException, IOException {
         Check_Boxes_1_Page.Clickadd();
     }
+
     @When("^Клик на кнопку 'Загрузить ТЗ'$")
     public static void CkickLoadTZ() throws InterruptedException, IOException {
         Check_Boxes_1_Page.Clickadd();
