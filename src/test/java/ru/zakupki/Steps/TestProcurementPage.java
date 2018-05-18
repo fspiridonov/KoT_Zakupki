@@ -12,6 +12,7 @@ import ru.zakupki.Pages.ProcurementPage;
 import java.awt.*;
 import java.io.IOException;
 
+import static com.codeborne.selenide.Selenide.refresh;
 import static java.lang.Thread.sleep;
 
 
@@ -114,11 +115,12 @@ public class TestProcurementPage {
         ProcurementPage.testCloseForm();
     }
 
-    @When("^Перенос карточки на след этап$")
-    public static void transferCardZakupki() throws AWTException, InterruptedException {
+    @When("^Перенос карточки c этапа \"(.*)\" на этап \"(.*)\"$")
+    public static void transferCardZakupki(int idDrag, int idDrop) throws AWTException, InterruptedException {
         sleep(3000);
-        ProcurementPage.tranfer(1,2);
+        ProcurementPage.tranfer(idDrag,idDrop);
         sleep(3000);
+
     }
 
 }

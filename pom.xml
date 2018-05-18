@@ -90,7 +90,7 @@
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
-            <version>4.9</version>
+            <version>4.11.4</version>
             <scope>test</scope>
         </dependency>
 
@@ -215,6 +215,12 @@
             <groupId>com.itextpdf</groupId>
             <artifactId>hyph</artifactId>
             <version>7.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>htmlunit-driver</artifactId>
+            <version>2.29.0</version>
         </dependency>
 
 

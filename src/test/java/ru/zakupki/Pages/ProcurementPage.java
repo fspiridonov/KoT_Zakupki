@@ -3,14 +3,19 @@ package ru.zakupki.Pages;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import cucumber.api.java.en.When;
+import cucumber.runtime.io.Helpers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
 import ru.zakupki.Helpers.ButtonsUtil;
 import ru.zakupki.Helpers.LoggerConsole;
+import ru.zakupki.Helpers.StorageString;
 import ru.zakupki.Helpers.TestHelper;
 
 import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseEvent;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Random;
@@ -18,6 +23,7 @@ import java.util.Random;
 import static com.codeborne.selenide.Selenide.*;
 import static ru.zakupki.Helpers.LoggerConsole.Logg;
 import static ru.zakupki.Helpers.LoggerConsole.LoggNotError;
+import static ru.zakupki.Helpers.StorageString.stringNumberDoc.numberDoc;
 
 public class ProcurementPage {
 
@@ -27,12 +33,16 @@ public class ProcurementPage {
         WebElement name = $(By.xpath("//textarea[@name='name']"));
         sleep(1500);
         Random random = new Random();
-        int num = random.nextInt(99);
+        int num = random.nextInt(999);
+        String randomDoc = txt+num;
         try {
 
 
-            actions().click(name).sendKeys(txt+num).perform();
+            actions().click(name).sendKeys(randomDoc).perform();
+
+            numberDoc = randomDoc;
             LoggerConsole.LoggNotError("Заполнение поля наименования");
+
 
         } catch (Error e) {
             LoggerConsole.Logg("Не смог заполнить поле наименования");
@@ -212,18 +222,43 @@ public class ProcurementPage {
         }
     }
     //перенос документов
-    public static void tranfer(int idDrag, int idDrop) throws AWTException {
+    public static void tranfer(int colomn, int colomn1 ) throws AWTException {
         refresh();
-        //card - поиск последней карточки
-        WebElement card = $(By.xpath("//div[@data-id='container-id-"+idDrag+"']//div[@class='kanban-column__dnd-item smooth-dnd-draggable-wrapper'][last()]"));
+        sleep(3000);
+        Robot robot = new Robot();
+        //card - поиск последней карточк
+        WebElement x1 = $(By.xpath("//div[@class='kanban-column']["+colomn+"]/div[@class='kanban-column__container'][1]/div/div/div/div/div[2]/div[text()='"+numberDoc+"']/../../div[4]"));
         //stage - сам этап
-        WebElement stage = $(By.xpath("//div[@data-id='container-id-"+idDrop+"']"));
-        actions().dragAndDrop(card, stage).perform();
+        WebElement x2 = $(By.xpath("//div[@class='kanban-column']["+colomn1+"]/div[@class='kanban-column__container'][1]/div/div/div[last()]/div/div[4]"));
+        sleep(2000);
+//        actions().click(x1).click(x2).perform();
+        robot.setAutoDelay(1500);
+        org.openqa.selenium.Dimension fromSize = x1.getSize();
+        org.openqa.selenium.Dimension toSize = x2.getSize();
+        int xCentreFrom = fromSize.width / 2;
+        int yCentreFrom = fromSize.height / 2;
+        int xCentreTo = toSize.width / 2;
+        int yCentreTo = toSize.height / 2;
+        org.openqa.selenium.Point fromLocation = x1.getLocation();
+        Point toLocation = x2.getLocation();
+        toLocation.x += xCentreTo;
+        toLocation.y += yCentreTo;
+        fromLocation.x += xCentreFrom;
+        fromLocation.y += yCentreFrom;
+        robot.mouseMove(fromLocation.x, fromLocation.y);
+        robot.mousePress(MouseEvent.BUTTON1_MASK);
+        robot.setAutoDelay(2000);
+        robot.mouseMove(((toLocation.x - fromLocation.x) / 2) + fromLocation.x, ((toLocation.y - fromLocation.y) / 2) + fromLocation.y);
+        robot.mouseMove(toLocation.x, toLocation.y);
+        robot.mouseRelease(MouseEvent.BUTTON1_MASK);
+        robot.setAutoDelay(2000);
+//        actions().pause(1000).dragAndDrop(card, stage).perform();
+        sleep(3000);
+        refresh();
     }
 
     public static void clickNewZakupka(){
         WebElement click = $(By.xpath("//div[@class='kanban-column'][1]/div[3]/a/div[@class='btn__content']"));
-        refresh();
         sleep(3000);
         actions().click(click).perform();
     }

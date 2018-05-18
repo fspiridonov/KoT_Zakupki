@@ -77,7 +77,7 @@ public class Check_Boxes_1_Page {
 //заполняем поле причины
         //todo
         WebElement name = $(By.xpath("//*[@id='form-task']/div/div/button[1]/div"));
-        sleep(2000);
+        sleep(3000);
 
         try {
             actions().click(name).perform();

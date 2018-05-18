@@ -24,7 +24,7 @@ public class ButtonsUtil {
         try {
 //            $(By.xpath("//div[text()='" + text + "']")).should(Condition.visible);
             sleep(1000);
-            actions().doubleClick(txt).perform();
+            actions().click(txt).perform();
             LoggNotError("Произошел клик на кнопку '" + text + "'");
         } catch (Error e) {
             Logg("Не произошел клик на кнопку '" + text + "'");
