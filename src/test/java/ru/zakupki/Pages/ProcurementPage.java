@@ -226,10 +226,12 @@ public class ProcurementPage {
         refresh();
         sleep(3000);
         Robot robot = new Robot();
+//        robot.keyRelease(KeyEvent.VK_F11);
+
         //card - поиск последней карточк
         WebElement x1 = $(By.xpath("//div[@class='kanban-column']["+colomn+"]/div[@class='kanban-column__container'][1]/div/div/div/div/div[2]/div[text()='"+numberDoc+"']/../../div[4]"));
         //stage - сам этап
-        WebElement x2 = $(By.xpath("//div[@class='kanban-column']["+colomn1+"]/div[@class='kanban-column__container'][1]/div/div/div[last()]/div/div[4]"));
+        WebElement x2 = $(By.xpath("//div[@class='kanban-column']["+colomn1+"]//div[@class='kanban-column__container'][1]/div/div/div[1]"));
         sleep(2000);
 //        actions().click(x1).click(x2).perform();
         robot.setAutoDelay(1500);
