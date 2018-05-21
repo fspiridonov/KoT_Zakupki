@@ -5,6 +5,7 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import cucumber.api.CucumberOptions;
 import cucumber.api.Scenario;
+import cucumber.api.SnippetType;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -24,10 +25,11 @@ import static com.codeborne.selenide.Selenide.open;
         features = {"src/test/java/ru/zakupki/Features"},
         glue = "ru/zakupki/Steps",
 //        tags = {""},
-//        tags = {"@smokeTest#1,@smokeTest#2,@smokeTest#3"}, //Запустить несколько фич
-        tags = {"@stage#1, @stage#1Check-Boxes, @stage#2Check-Boxes"},
+//        tags = {"@stage#1, @stage#1Check-boxes, @stage#2Check-boxes"}, //Запустить несколько фич
+        tags = {"@test#1"},
         format = {"json:target/cucumber.json","html:target/site/cucumber-pretty"},
-        strict = true
+        strict = true,
+        snippets = SnippetType.CAMELCASE
         )
 
 public class Runner {

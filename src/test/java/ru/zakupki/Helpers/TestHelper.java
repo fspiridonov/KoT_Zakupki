@@ -24,7 +24,7 @@ import static org.junit.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 import static ru.zakupki.Helpers.LoggerConsole.Logg;
 import static ru.zakupki.Helpers.LoggerConsole.LoggNotError;
-import static ru.zakupki.Helpers.StorageString.contentOfWorks.cWork;
+
 
 public class TestHelper {
 
@@ -502,23 +502,23 @@ public class TestHelper {
         random = Result;
     }
 
-    public static void nameDocument() throws AWTException, IOException {
-        WebElement text1 = $(By.xpath("//label[text()='Содержание работ']/ancestor::div[1]/div[@class='b-flex-row i-bem b-flex-row_js_inited']"));
-        $(By.xpath("//div[@class='c-process-card drag-drop i-bem c-process-card_js_inited c-process-card_focused']")).doubleClick();
-        sleep(1000);
-        actions().sendKeys(Keys.ESCAPE).build().perform();
-        cWork = text1.getText();
-        ButtonsUtil.clickSpanButton("Отмена");
-//        String nameDoc = $(By.xpath("//label[text()='Содержание работ']/ancestor::div[1]/div[@class='b-flex-row i-bem b-flex-row_js_inited']")).getText();
-    }
-
-    public static void namePackage() throws AWTException, IOException {
-        WebElement text1 = $(By.xpath("//label[text()='Содержание работ']/ancestor::div[1]/div[@class='b-flex-row i-bem b-flex-row_js_inited']"));
-        $(By.xpath("//div[@class='c-process-card drag-drop i-bem c-process-card_js_inited c-process-card_focused']")).doubleClick();
-        cWork = text1.getText();
-        ButtonsUtil.clickSpanButton("Отмена");
-//        String nameDoc = $(By.xpath("//label[text()='Содержание работ']/ancestor::div[1]/div[@class='b-flex-row i-bem b-flex-row_js_inited']")).getText();
-    }
+//    public static void nameDocument() throws AWTException, IOException {
+//        WebElement text1 = $(By.xpath("//label[text()='Содержание работ']/ancestor::div[1]/div[@class='b-flex-row i-bem b-flex-row_js_inited']"));
+//        $(By.xpath("//div[@class='c-process-card drag-drop i-bem c-process-card_js_inited c-process-card_focused']")).doubleClick();
+//        sleep(1000);
+//        actions().sendKeys(Keys.ESCAPE).build().perform();
+//        cWork = text1.getText();
+//        ButtonsUtil.clickSpanButton("Отмена");
+////        String nameDoc = $(By.xpath("//label[text()='Содержание работ']/ancestor::div[1]/div[@class='b-flex-row i-bem b-flex-row_js_inited']")).getText();
+//    }
+//
+//    public static void namePackage() throws AWTException, IOException {
+//        WebElement text1 = $(By.xpath("//label[text()='Содержание работ']/ancestor::div[1]/div[@class='b-flex-row i-bem b-flex-row_js_inited']"));
+//        $(By.xpath("//div[@class='c-process-card drag-drop i-bem c-process-card_js_inited c-process-card_focused']")).doubleClick();
+//        cWork = text1.getText();
+//        ButtonsUtil.clickSpanButton("Отмена");
+////        String nameDoc = $(By.xpath("//label[text()='Содержание работ']/ancestor::div[1]/div[@class='b-flex-row i-bem b-flex-row_js_inited']")).getText();
+//    }
 
 
     //бесконечный цикл. вводим улицу до тех пор, пока не появится список улиц

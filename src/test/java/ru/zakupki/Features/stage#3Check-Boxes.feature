@@ -1,7 +1,7 @@
 @stage#3Check-Boxes
 
-Feature: stage#2Check-Boxes
+Feature: stage#3Check-Boxes
 
-Scenario: Тестовый прогон
+  Scenario: Тестовый прогон
 
-When Перенос карточки на след этап
+    When Перенос карточки c этапа "2" на этап "3"

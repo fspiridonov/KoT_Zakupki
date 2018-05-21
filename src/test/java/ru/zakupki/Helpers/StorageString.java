@@ -1,13 +1,6 @@
 package ru.zakupki.Helpers;
 
 public class StorageString {
-    public static class contentOfWorks {
-        public static String cWork;
-
-        public static void setcWork(String cWork) {
-            contentOfWorks.cWork = cWork;
-        }
-    }
 
     public static class contentError {
         public static String error;

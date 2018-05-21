@@ -14,11 +14,22 @@ import static com.codeborne.selenide.Selenide.*;
 public class RedactorPage {
 
 
+    public static void clickDelete(){
+        WebElement click1 = $(By.xpath("//i[text()='delete_sweep']/.."));
+        WebElement click2 = $(By.xpath("//div[@class='btn__content'][text()='Подтвердить удаление']"));
+        click1.click();
+        click2.click();
+        sleep(2000);
+
+    }
+
+
     public static void clicklastelem() throws IOException {
 //входит внутрь тестовой закупки
-        WebElement name = $(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div[@class='card__text']")).doubleClick();
-        sleep(2000);
+        WebElement name = $(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div[@class='card__text']"));
+
             try {
+                sleep(3000);
             actions().doubleClick(name).perform();
             LoggerConsole.LoggNotError("входит внутрь тестовой закупки");
         } catch (Error e) {
