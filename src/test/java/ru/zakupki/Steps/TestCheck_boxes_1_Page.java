@@ -22,9 +22,14 @@ public class TestCheck_boxes_1_Page {
     public static String[] importance = {"Важная"}; //Типы статусов инициатив
 
 
-    @When("^Клик на чек-бокс \"(.*)\"$")
-    public static void clickLast4KBox(String val) throws InterruptedException, IOException {
-        Check_Boxes_1_Page.clicklast4Box(val);
+    @When("^Клик на чек-бокс one \"(.*)\"$")
+    public static void clickLast4KBox1(String val) throws InterruptedException, IOException {
+        Check_Boxes_1_Page.clicklast4Box1(val);
+    }
+
+    @When("^Клик на чек-бокс TEST$")
+    public static void clickLast4KBox() throws InterruptedException, IOException {
+        Check_Boxes_1_Page.clicklast4Box();
     }
 
     @When("^Клик на кнопкку 'Заполнить КПГЗ'$")

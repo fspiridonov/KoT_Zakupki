@@ -113,6 +113,7 @@ public class TestProcurementPage {
     @When("^Проверка на закрытие формы 'Форма создания'$")
     public static void closeForm() throws IOException {
         ProcurementPage.testCloseForm();
+        ProcurementPage.testStorage();
     }
 
     @When("^Перенос карточки c этапа \"(.*)\" на этап \"(.*)\"$")

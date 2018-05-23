@@ -1,6 +1,7 @@
 package ru.zakupki.Pages;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import cucumber.api.java.en.When;
 import cucumber.runtime.io.Helpers;
@@ -24,6 +25,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static ru.zakupki.Helpers.LoggerConsole.Logg;
 import static ru.zakupki.Helpers.LoggerConsole.LoggNotError;
 import static ru.zakupki.Helpers.StorageString.stringNumberDoc.numberDoc;
+import static ru.zakupki.Pages.Check_Boxes_1_Page.nameCheck;
 
 public class ProcurementPage {
 
@@ -208,6 +210,21 @@ public class ProcurementPage {
             LoggerConsole.LoggNotError("выбирает закон");
         } catch (Error e) {
             LoggerConsole.Logg("не смог выбирать закон");
+        }
+    }
+
+
+    public static void testStorage(){
+        String xpath = "//div[text()='" + numberDoc + "']/../../div[3]/div/div[text()]";
+        sleep(2000);
+        ElementsCollection collect = $$(By.xpath(xpath));
+
+        for (SelenideElement aCollection : collect) {
+            String ch = aCollection.getText();
+            nameCheck.add(ch);
+
+
+
         }
     }
 

@@ -17,9 +17,11 @@ public class RedactorPage {
     public static void clickDelete(){
         WebElement click1 = $(By.xpath("//i[text()='delete_sweep']/.."));
         WebElement click2 = $(By.xpath("//div[@class='btn__content'][text()='Подтвердить удаление']"));
-        click1.click();
-        click2.click();
         sleep(2000);
+        click1.click();
+        sleep(2000);
+        click2.click();
+        refresh();
 
     }
 
@@ -27,13 +29,12 @@ public class RedactorPage {
     public static void clicklastelem() throws IOException {
 //входит внутрь тестовой закупки
         WebElement name = $(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div[@class='card__text']"));
-
+        sleep(4000);
             try {
                 sleep(3000);
             actions().doubleClick(name).perform();
-            LoggerConsole.LoggNotError("входит внутрь тестовой закупки");
         } catch (Error e) {
-            LoggerConsole.Logg("Не смог войти внутрь тестовой закупки");
+            LoggerConsole.Logg("");
         }
     }
 

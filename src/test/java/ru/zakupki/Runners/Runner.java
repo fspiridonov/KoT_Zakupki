@@ -26,10 +26,9 @@ import static com.codeborne.selenide.Selenide.open;
         glue = "ru/zakupki/Steps",
 //        tags = {""},
 //        tags = {"@stage#1, @stage#1Check-boxes, @stage#2Check-boxes"}, //Запустить несколько фич
-        tags = {"@test#1"},
+        tags = {"@stage#1, @stage#1Check-Boxes"},
         format = {"json:target/cucumber.json","html:target/site/cucumber-pretty"},
-        strict = true,
-        snippets = SnippetType.CAMELCASE
+        strict = true
         )
 
 public class Runner {

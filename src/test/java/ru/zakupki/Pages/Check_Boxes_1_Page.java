@@ -1,5 +1,9 @@
 package ru.zakupki.Pages;
 
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.ElementsCollection;
+import com.codeborne.selenide.SelenideElement;
+import org.apache.commons.lang3.ArrayUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -7,23 +11,55 @@ import ru.zakupki.Helpers.LoggerConsole;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import static com.codeborne.selenide.Selenide.*;
+import static ru.zakupki.Helpers.StorageString.stringNumberDoc.numberDoc;
 
 public class Check_Boxes_1_Page {
 
+    public static List<String> nameCheck = new ArrayList<String>();
+    public static String[] yyy = {};
 
-    public static void clicklast4Box(String val) throws IOException {
+
+    public static void clicklast4Box1(String val) throws IOException {
 //Клик на чек-бокс "" первого этапа
-        WebElement name = $(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div//div[text()='" + val + "']"));
-        sleep(2000);
-        try {
-  //          name.isDisplayed();
-            sleep(3000);
-            actions().click(name).perform();
+        WebElement che = $(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div//div[text()='" + val + "']"));
+
+        if ($(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div//div[text()='" + val + "']")).exists()) {
+            $(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div//div[text()='" + val + " (затратный метод)" + "']")).shouldHave(Condition.visible);
+            $(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div//div[text()='" + val + " (затратный метод)" + "']")).click();
             LoggerConsole.LoggNotError("входит внутрь чекбокса '" + val + "' ");
-        } catch (Error e) {
+        } else if ($(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div//div[text()='" + val + "']")).exists()) {
+            $(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div//div[text()='" + val + " (анализ рыночной стоимости)" + "']")).shouldHave(Condition.visible);
+            $(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div//div[text()='" + val + " (анализ рыночной стоимости)" + "']")).click();
+            LoggerConsole.LoggNotError("входит внутрь чекбокса '" + val + "' ");
+        } else if ($(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div//div[text()='" + val + "']")).exists()) {
+            $(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div//div[text()='" + val + " (метод составления смет)" + "']")).shouldHave(Condition.visible);
+            $(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div//div[text()='" + val + " (метод составления смет)" + "']")).click();
+            LoggerConsole.LoggNotError("входит внутрь чекбокса '" + val + "' ");
+        } else {
             LoggerConsole.Logg("Не смог войти внутрь тестовой закупки '" + val + "' ");
+        }
+
+    }
+
+
+    public static void clicklast4Box() throws IOException {
+//Клик на чек-бокс "" первого этапа
+
+        for (String element : nameCheck) {
+            try {
+                sleep(2000);
+                WebElement xpatch1 = $(By.xpath("//div[text()='" + numberDoc + "']/../../div[3]/div/div[text()='" + element + "']"));
+                actions().click(xpatch1).perform();
+                nameCheck.remove(0);
+                LoggerConsole.LoggNotError("входит внутрь чекбокса '" + element + "' ");
+            } catch (Error e) {
+                LoggerConsole.Logg("Не смог войти внутрь тестовой закупки '" + element + "' ");
+            }
+            break;
         }
     }
 
@@ -33,7 +69,6 @@ public class Check_Boxes_1_Page {
         sleep(1500);
 
         try {
-            name.isDisplayed();
             actions().click(name).perform();
             LoggerConsole.LoggNotError("Клик на кнопку Заполнить КПГЗ");
 
@@ -86,6 +121,7 @@ public class Check_Boxes_1_Page {
             LoggerConsole.Logg("Не смог кликнуть на кнопку создать");
         }
     }
+
     //button/div
     public static void clickedit() throws IOException {
 //заполняем поле причины
@@ -226,6 +262,7 @@ public class Check_Boxes_1_Page {
             LoggerConsole.Logg("Поле не существует | Поле не активна");
         }
     }
+
     public static void clickordinance() throws FileNotFoundException, IOException {
 //        Ввожу логин login
         WebElement datamer = $(By.xpath("//div[text()='Закон']"));
@@ -241,7 +278,8 @@ public class Check_Boxes_1_Page {
             LoggerConsole.Logg("Не смог кликнуть на поле закон");
         }
     }
-    public static void selectordinance( String txt) throws FileNotFoundException, IOException {
+
+    public static void selectordinance(String txt) throws FileNotFoundException, IOException {
 //        Ввожу логин login
         WebElement valuation = $(By.xpath("//div[text()='" + txt + "']"));
         try {
