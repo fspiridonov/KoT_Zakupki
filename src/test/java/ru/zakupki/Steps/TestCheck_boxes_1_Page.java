@@ -29,6 +29,7 @@ public class TestCheck_boxes_1_Page {
 
     @When("^Клик на чек-бокс \"(.*)\"$")
     public static void clickLast4KBox(String check) throws InterruptedException, IOException {
+        sleep(3000);
         Check_Boxes_1_Page.clicklast4Box();
     }
 
@@ -138,6 +139,7 @@ public class TestCheck_boxes_1_Page {
 
     @When("^Клик на кнопку 'Загрузить рассчет НМЦК'$")
     public static void CkickLoadNMCK() throws InterruptedException, IOException {
+        sleep(2000);
         Check_Boxes_1_Page.Clickadd();
     }
 

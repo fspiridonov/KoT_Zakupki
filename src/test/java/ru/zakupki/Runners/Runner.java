@@ -24,7 +24,7 @@ import static com.codeborne.selenide.Selenide.open;
 @CucumberOptions(
         features = {"src/test/java/ru/zakupki/Features"},
         glue = "ru/zakupki/Steps",
-        tags = {"@stage#1_1, @stage#1_1Check-Boxes, @stage#2_1Check-Boxes"}, //Запустить несколько фич
+        tags = {"@stage#1_2, @stage#1_2Check-Boxes"}, //Запустить несколько фич
 //        tags = {"@stage#0"},
         format = {"json:target/cucumber.json","html:target/site/cucumber-pretty"},
         strict = true

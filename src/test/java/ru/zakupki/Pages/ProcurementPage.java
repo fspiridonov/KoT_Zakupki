@@ -216,13 +216,14 @@ public class ProcurementPage {
 
     public static void testStorage(){
         String xpath = "//div[text()='" + numberDoc + "']/../../div[3]/div/div[text()]";
-        sleep(2000);
+        sleep(4000);
         ElementsCollection collect = $$(By.xpath(xpath));
 
         for (SelenideElement aCollection : collect) {
             String ch = aCollection.getText();
             nameCheck.add(ch);
         }
+        refresh();
     }
 
     public static void testCloseForm() throws IOException {

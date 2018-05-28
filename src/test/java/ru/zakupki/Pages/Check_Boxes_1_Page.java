@@ -25,7 +25,6 @@ public class Check_Boxes_1_Page {
     public static void clicklast4Box() throws IOException {
 //Клик на чек-бокс "" первого этапа
         for (String element : nameCheck) {
-
             try {
                 sleep(2000);
                 WebElement xpatch1 = $(By.xpath("//div[text()='" + numberDoc + "']/../../div[3]/div/div[text()='" + element + "']"));
@@ -105,6 +104,7 @@ public class Check_Boxes_1_Page {
         sleep(3000);
 
         try {
+            sleep(1500);
             actions().click(name).perform();
             LoggerConsole.LoggNotError("клик на кнопку создать");
         } catch (Error e) {
