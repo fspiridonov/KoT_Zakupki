@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4df23628-aa4c-4340-aee3-a6fa91811095" name="Default" comment="[+] Новые правки;  Добавлен новая фича">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_EFA.feature" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_EFA_Check-Boxes.feature" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_OMZ.feature" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_OMZ_Check-Boxes.feature" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/Type_Tests/downDragAndDrop.feature" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#2Check-Boxes.feature" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#2Check-Boxes.feature" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Helpers/ButtonsUtil.java" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Helpers/ButtonsUtil.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/type/stage#1_type_EFA.feature" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/type/stage#1_type_EFA_Check-Boxes.feature" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/type/stage#1_type_OMZ.feature" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/Check_Boxes_1_Page.java" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/Check_Boxes_1_Page.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Runners/Runner.java" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Runners/Runner.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestCheck_boxes_1_Page.java" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestCheck_boxes_1_Page.java" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.json" afterPath="$PROJECT_DIR$/target/cucumber.json" />
       <change beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/formatter.js" afterPath="$PROJECT_DIR$/target/site/cucumber-pretty/formatter.js" />
       <change beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/index.html" afterPath="$PROJECT_DIR$/target/site/cucumber-pretty/index.html" />
       <change beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/jquery-1.8.2.min.js" afterPath="$PROJECT_DIR$/target/site/cucumber-pretty/jquery-1.8.2.min.js" />
@@ -46,6 +49,7 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="KoTClone" />
+    <favorites_list name="TODO" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -59,11 +63,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Runners/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="26" column="102" lean-forward="true" selection-start-line="26" selection-start-column="102" selection-end-line="26" selection-end-column="102" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Check_Boxes_1_Page.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/Check_Boxes_1_Page.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="28" column="82" lean-forward="true" selection-start-line="28" selection-start-column="82" selection-end-line="28" selection-end-column="82" />
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stage#1_type_OMZ_Check-Boxes.feature" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_OMZ_Check-Boxes.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -216,12 +240,12 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/type/stage#1_type_OMZ.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Helpers/ButtonsUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/Check_Boxes_1_Page.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestCheck_boxes_1_Page.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/type/stage#1_type_EFA_Check-Boxes.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/type/stage#1_type_OMZ_Check-Boxes.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#2Check-Boxes.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Runners/Runner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/Check_Boxes_1_Page.java" />
       </list>
     </option>
   </component>
@@ -885,7 +909,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527066964010</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="[+] Новые правки;  Добавлен новый метод для чек-боксов">
+      <created>1527505344734</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1527505344734</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -946,12 +977,12 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32659933" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20396914" sideWeight="0.76803553" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20396914" sideWeight="0.7595712" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18710022" sideWeight="0.51735014" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24946696" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20176406" sideWeight="0.23196448" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20396914" sideWeight="0.24042879" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27524972" sideWeight="0.48958334" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1005,7 +1036,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="[*] Запрос - Scenario Outline вместо цикла" />
     <MESSAGE value="[*] chromedriver" />
     <MESSAGE value="[*] Пара правок" />
     <MESSAGE value="[+] Запросы: создание и проверки" />
@@ -1030,14 +1060,15 @@
     <MESSAGE value="[+] Правки" />
     <MESSAGE value="[+] Новые правки;  Добавлены новые фичи" />
     <MESSAGE value="[+] Новые правки;  Добавлен новая фича; Добавлен новый метод внесения значений в массив" />
-    <option name="LAST_COMMIT_MESSAGE" value="[+] Новые правки;  Добавлен новая фича; Добавлен новый метод внесения значений в массив" />
+    <MESSAGE value="[+] Новые правки;  Добавлен новый метод для чек-боксов" />
+    <option name="LAST_COMMIT_MESSAGE" value="[+] Новые правки;  Добавлен новый метод для чек-боксов" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="865" />
+      <option name="time" value="867" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1070,13 +1101,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-junit/1.2.5/cucumber-junit-1.2.5.jar!/cucumber/runtime/junit/ExecutionUnitRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-junit/1.2.5/cucumber-junit-1.2.5.jar!/cucumber/runtime/junit/FeatureRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-25">
@@ -1312,16 +1336,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/Check_Boxes_1_Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding>
-            <element signature="e#700#708#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestCheck_boxes_1_Page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -1428,8 +1442,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Runners/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="26" column="102" lean-forward="true" selection-start-line="26" selection-start-column="102" selection-end-line="26" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/Check_Boxes_1_Page.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="28" column="82" lean-forward="true" selection-start-line="28" selection-start-column="82" selection-end-line="28" selection-end-column="82" />
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_OMZ_Check-Boxes.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
           <folding />
         </state>
       </provider>
