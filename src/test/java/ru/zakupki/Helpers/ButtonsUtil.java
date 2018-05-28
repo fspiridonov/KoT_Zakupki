@@ -20,7 +20,7 @@ import static ru.zakupki.Helpers.LoggerConsole.LoggNotError;
 public class ButtonsUtil {
 
     public static void clickSpanButton(String text) throws FileNotFoundException, IOException {
-        WebElement txt = $(By.xpath("//div[text()='" + text + "']"));
+        WebElement txt = $(By.xpath("//div[text()[contains(.,'"+text+"')]]"));
         try {
 //            $(By.xpath("//div[text()='" + text + "']")).should(Condition.visible);
             sleep(1000);

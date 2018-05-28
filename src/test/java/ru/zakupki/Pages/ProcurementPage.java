@@ -222,9 +222,6 @@ public class ProcurementPage {
         for (SelenideElement aCollection : collect) {
             String ch = aCollection.getText();
             nameCheck.add(ch);
-
-
-
         }
     }
 

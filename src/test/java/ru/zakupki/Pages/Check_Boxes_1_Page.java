@@ -3,7 +3,6 @@ package ru.zakupki.Pages;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
-import org.apache.commons.lang3.ArrayUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -13,6 +12,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicReferenceArray;
 
 import static com.codeborne.selenide.Selenide.*;
 import static ru.zakupki.Helpers.StorageString.stringNumberDoc.numberDoc;
@@ -22,44 +22,34 @@ public class Check_Boxes_1_Page {
     public static List<String> nameCheck = new ArrayList<String>();
     public static String[] yyy = {};
 
-
-    public static void clicklast4Box1(String val) throws IOException {
-//Клик на чек-бокс "" первого этапа
-        WebElement che = $(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div//div[text()='" + val + "']"));
-
-        if ($(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div//div[text()='" + val + "']")).exists()) {
-            $(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div//div[text()='" + val + " (затратный метод)" + "']")).shouldHave(Condition.visible);
-            $(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div//div[text()='" + val + " (затратный метод)" + "']")).click();
-            LoggerConsole.LoggNotError("входит внутрь чекбокса '" + val + "' ");
-        } else if ($(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div//div[text()='" + val + "']")).exists()) {
-            $(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div//div[text()='" + val + " (анализ рыночной стоимости)" + "']")).shouldHave(Condition.visible);
-            $(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div//div[text()='" + val + " (анализ рыночной стоимости)" + "']")).click();
-            LoggerConsole.LoggNotError("входит внутрь чекбокса '" + val + "' ");
-        } else if ($(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div//div[text()='" + val + "']")).exists()) {
-            $(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div//div[text()='" + val + " (метод составления смет)" + "']")).shouldHave(Condition.visible);
-            $(By.xpath("//div[@data-id='container-id-1']/div/div[last()]/div/div//div[text()='" + val + " (метод составления смет)" + "']")).click();
-            LoggerConsole.LoggNotError("входит внутрь чекбокса '" + val + "' ");
-        } else {
-            LoggerConsole.Logg("Не смог войти внутрь тестовой закупки '" + val + "' ");
-        }
-
-    }
-
-
     public static void clicklast4Box() throws IOException {
 //Клик на чек-бокс "" первого этапа
-
         for (String element : nameCheck) {
+
             try {
                 sleep(2000);
                 WebElement xpatch1 = $(By.xpath("//div[text()='" + numberDoc + "']/../../div[3]/div/div[text()='" + element + "']"));
                 actions().click(xpatch1).perform();
-                nameCheck.remove(0);
                 LoggerConsole.LoggNotError("входит внутрь чекбокса '" + element + "' ");
             } catch (Error e) {
                 LoggerConsole.Logg("Не смог войти внутрь тестовой закупки '" + element + "' ");
             }
             break;
+        }
+    }
+
+    public static void closeJobClick() {
+
+        yyy = nameCheck.toArray(new String[1]);
+        try {
+            if (yyy.length == 1) {
+            } else {
+                $(By.xpath("//div[text()='" + numberDoc + "']/../../div[3]/div[@class='kanban-task py-2 card__text py-1 kanban-task_disabled']/div[text()='" + String.valueOf(yyy[1]) + "']")).shouldHave(Condition.visible);
+            }
+        } catch (Error e) {
+            nameCheck.remove(0);
+        } finally {
+
         }
     }
 
@@ -104,7 +94,7 @@ public class Check_Boxes_1_Page {
             LoggerConsole.LoggNotError("выбирает статью");
 
         } catch (Error e) {
-            LoggerConsole.Logg("Не смог вцыбрать статью из выпадающего списка");
+            LoggerConsole.Logg("Не смог выбрать статью из выпадающего списка");
         }
     }
 
