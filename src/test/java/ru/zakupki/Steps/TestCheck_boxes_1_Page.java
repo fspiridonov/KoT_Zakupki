@@ -134,7 +134,9 @@ public class TestCheck_boxes_1_Page {
 
     @When("^Клик на кнопку 'Загрузить ТЗ'$")
     public static void CkickLoadTZ() throws InterruptedException, IOException {
+        sleep(2000);
         Check_Boxes_1_Page.Clickadd();
+        sleep(1000);
     }
 
     @When("^Клик на кнопку 'Загрузить рассчет НМЦК'$")

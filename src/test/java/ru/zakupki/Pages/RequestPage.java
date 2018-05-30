@@ -14,7 +14,7 @@ import ru.zakupki.Helpers.ButtonsUtil;
 import ru.zakupki.Helpers.FillUtil;
 import ru.zakupki.Helpers.LoggerConsole;
 import ru.zakupki.Helpers.TestHelper;
-import ru.zakupki.Steps.TestPackagePage;
+//import ru.zakupki.Steps.TestPackagePage;
 
 
 import javax.swing.text.MutableAttributeSet;

@@ -106,7 +106,7 @@ public class TestProcurementPage {
     @When("^Кликает на календарь$")
     public static void clickCalendar() throws InterruptedException, IOException {
         sleep(1000);
-        ProcurementPage.clickCalendar("29");
+        ProcurementPage.clickCalendar("28");
         sleep(1000);
     }
 
