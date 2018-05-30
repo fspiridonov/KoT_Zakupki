@@ -36,9 +36,9 @@ public class TestHelper {
         System.out.println("Скриншот состояния во время упавшей проверки: " + name);
     }
 
-    public static void loadFile(String file) {
+    public static void loadFile(String file, int num) {
 //        Загружаю файл file кнопкой
-        $(By.xpath("//input[@type='file']")).uploadFile(new File("src/test/repository/Files/" + file));
+        $(By.xpath("//div["+num+"]/*/input[@type='file']")).uploadFile(new File("src/test/repository/Files/" + file));
 
     }
 

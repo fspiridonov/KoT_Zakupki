@@ -26,7 +26,7 @@ public class Check_Boxes_1_Page {
 //Клик на чек-бокс "" первого этапа
         for (String element : nameCheck) {
             try {
-                sleep(5000);
+                sleep(2000);
                 WebElement xpatch1 = $(By.xpath("//div[text()='" + numberDoc + "']/../../div[3]/div/div[text()='" + element + "']"));
                 actions().click(xpatch1).perform();
                 LoggerConsole.LoggNotError("входит внутрь чекбокса '" + element + "' ");

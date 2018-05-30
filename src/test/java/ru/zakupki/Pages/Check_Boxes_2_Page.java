@@ -16,10 +16,10 @@ public class Check_Boxes_2_Page {
     public static void clicklast4Box(String val) throws IOException {
 //заполняем поле причины
         WebElement name = $(By.xpath("//div[@data-id='container-id-2']/div/div[last()]/div/div//div[text()='" + val + "']"));
-        sleep(3000);
+        sleep(3500);
         try {
-            name.isDisplayed();
-            actions().doubleClick(name).perform();
+//            name.isDisplayed();
+            actions().click(name).perform();
             LoggerConsole.LoggNotError("входит внутрь чекбокса '" + val + "' ");
         } catch (Error e) {
             LoggerConsole.Logg("Не смог войти внутрь тестовой закупки '" + val + "' ");

@@ -111,7 +111,7 @@ public class TestProcurementPage {
     }
 
     @When("^Проверка на закрытие формы 'Форма создания'$")
-    public static void closeForm() throws IOException {
+    public static void closeForm() throws IOException, InterruptedException {
         ProcurementPage.testCloseForm();
         ProcurementPage.testStorage();
     }

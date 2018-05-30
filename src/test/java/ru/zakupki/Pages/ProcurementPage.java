@@ -22,6 +22,7 @@ import java.io.IOException;
 import java.util.Random;
 
 import static com.codeborne.selenide.Selenide.*;
+import static java.lang.Thread.sleep;
 import static ru.zakupki.Helpers.LoggerConsole.Logg;
 import static ru.zakupki.Helpers.LoggerConsole.LoggNotError;
 import static ru.zakupki.Helpers.StorageString.stringNumberDoc.numberDoc;
@@ -30,7 +31,7 @@ import static ru.zakupki.Pages.Check_Boxes_1_Page.nameCheck;
 public class ProcurementPage {
 
 
-    public static void fillname(String txt) throws IOException {
+    public static void fillname(String txt) throws IOException, InterruptedException {
 //Заполняет поле 'Наименование'
         WebElement name = $(By.xpath("//textarea[@name='name']"));
         sleep(1500);
@@ -51,7 +52,7 @@ public class ProcurementPage {
         }
     }
 
-    public static void fillreason(String txt) throws IOException {
+    public static void fillreason(String txt) throws IOException, InterruptedException {
 //заполняем поле обоснования
         WebElement name = $(By.xpath("//textarea[@name='reason']"));
         sleep(1500);
@@ -67,7 +68,7 @@ public class ProcurementPage {
         }
     }
 
-    public static void Clickvendorselection() throws IOException {
+    public static void Clickvendorselection() throws IOException, InterruptedException {
 //клик на поле Выбор поставщика
         WebElement name = $(By.xpath("//label[text()='Выбор поставщика']"));
         sleep(1600);
@@ -100,7 +101,7 @@ public class ProcurementPage {
         }
     }
 
-    public static void clickvaluation() throws IOException {
+    public static void clickvaluation() throws IOException, InterruptedException {
 //клик на поле Расчет НМЦК
         WebElement name = $(By.xpath("//label[text()='Расчет НМЦК']"));
         sleep(1900);
@@ -129,7 +130,7 @@ public class ProcurementPage {
     }
 
 
-    public static void fillsumma(String summa) throws FileNotFoundException, IOException {
+    public static void fillsumma(String summa) throws FileNotFoundException, IOException, InterruptedException {
 //        вводет сумму
         WebElement name = $(By.xpath("//input[@aria-label='Сумма']"));
         sleep(2000);
@@ -145,7 +146,7 @@ public class ProcurementPage {
     }
 
 
-    public static void fillsummanxt(String summa) throws FileNotFoundException, IOException {
+    public static void fillsummanxt(String summa) throws FileNotFoundException, IOException, InterruptedException {
 //        ввводит сумму при добавлении последующей суммы
         WebElement name = $(By.xpath("//div[@class='input-group__input']/input[@aria-label='2018']"));
         sleep(1500);
@@ -160,7 +161,7 @@ public class ProcurementPage {
 
 
     //    public static void Clickcalendar( String data, String numb, String mon ) throws FileNotFoundException, IOException {
-    public static void clickCalendar(String numb) throws FileNotFoundException, IOException {
+    public static void clickCalendar(String numb) throws FileNotFoundException, IOException, InterruptedException {
 // Клик на календарь и введение даты
         WebElement datamer = $(By.xpath("//div[2]/div/div/div/div/div/div/div/button[@class='elevation-1 btn btn--small']"));
         WebElement datamer2 = $(By.xpath("//div[7]/div/div/div/div/div/div/div/button[@class='elevation-1 btn btn--small']"));
@@ -183,10 +184,12 @@ public class ProcurementPage {
 
         } catch (Error e) {
             LoggerConsole.Logg("Не смог кликнуть на календарь");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
     }
 
-    public static void clickordinance() throws FileNotFoundException, IOException {
+    public static void clickordinance() throws FileNotFoundException, IOException, InterruptedException {
 //        Ввожу логин login
         WebElement datamer = $(By.xpath("//label[text()='Закон']"));
         sleep(1500);
@@ -214,7 +217,7 @@ public class ProcurementPage {
     }
 
 
-    public static void testStorage(){
+    public static void testStorage() throws InterruptedException {
         String xpath = "//div[text()='" + numberDoc + "']/../../div[3]/div/div[text()]";
         sleep(4000);
         ElementsCollection collect = $$(By.xpath(xpath));
@@ -237,7 +240,7 @@ public class ProcurementPage {
         }
     }
     //перенос документов
-    public static void tranfer(int colomn, int colomn1 ) throws AWTException {
+    public static void tranfer(int colomn, int colomn1 ) throws AWTException, InterruptedException {
         refresh();
         sleep(3000);
         Robot robot = new Robot();
@@ -274,7 +277,7 @@ public class ProcurementPage {
         refresh();
     }
 
-    public static void clickNewZakupka(){
+    public static void clickNewZakupka() throws InterruptedException {
         WebElement click = $(By.xpath("//div[@class='kanban-column'][1]/div[3]/a/div[@class='btn__content']"));
         sleep(3000);
         actions().click(click).perform();

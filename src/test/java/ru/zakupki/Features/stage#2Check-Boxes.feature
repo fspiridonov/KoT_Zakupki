@@ -1,7 +1,7 @@
 @stage#2_1Check-Boxes
 
 Feature: stage#2Check-Boxes
-#
+
 #  Scenario: Авторизация
 #    When вводим логин "mnn"
 #    And вводим пароль "1qaz@WSX"
