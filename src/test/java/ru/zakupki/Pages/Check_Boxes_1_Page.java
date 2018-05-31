@@ -24,10 +24,11 @@ public class Check_Boxes_1_Page {
 
     public static void clicklast4Box() throws IOException {
 //Клик на чек-бокс "" первого этапа
+        sleep(2000);
         for (String element : nameCheck) {
             try {
-                sleep(2000);
                 WebElement xpatch1 = $(By.xpath("//div[text()='" + numberDoc + "']/../../div[3]/div/div[text()='" + element + "']"));
+                sleep(1500);
                 actions().click(xpatch1).perform();
                 LoggerConsole.LoggNotError("входит внутрь чекбокса '" + element + "' ");
             } catch (Error e) {
@@ -98,7 +99,6 @@ public class Check_Boxes_1_Page {
     }
 
     public static void Clickadd() throws IOException {
-//заполняем поле причины
         //todo
         WebElement name = $(By.xpath("//*[@id='form-task']/div/div/button[1]/div"));
         sleep(3000);

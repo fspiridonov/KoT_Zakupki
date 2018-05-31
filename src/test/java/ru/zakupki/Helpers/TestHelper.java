@@ -554,7 +554,15 @@ public class TestHelper {
         }
     }
 
-    //проверка на колличество чек-боксов
+    public static void testOpenFormCheckBox() throws IOException {
+        WebElement form = $(By.xpath("//div[@class='card-form']"));
+        try {
+            ((SelenideElement) form).should(Condition.visible);
+            LoggerConsole.LoggNotError("Форма открылась после клика на чек бокс ' ");
+        } catch (Error e) {
+            LoggerConsole.Logg("Форма  НЕ закрылась после кнопки 'Сохранить'");
+        }
+    }
 
 }
 

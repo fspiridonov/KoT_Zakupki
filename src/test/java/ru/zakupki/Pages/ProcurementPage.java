@@ -218,19 +218,19 @@ public class ProcurementPage {
 
 
     public static void testStorage() throws InterruptedException {
+        sleep(8000);
+        $(By.xpath("//div[text()='" + numberDoc + "']/../../div[3]/div/div[text()]")).shouldHave(Condition.visible);
         String xpath = "//div[text()='" + numberDoc + "']/../../div[3]/div/div[text()]";
-        sleep(4000);
         ElementsCollection collect = $$(By.xpath(xpath));
-
         for (SelenideElement aCollection : collect) {
             String ch = aCollection.getText();
             nameCheck.add(ch);
         }
-        refresh();
     }
 
-    public static void testCloseForm() throws IOException {
+    public static void testCloseForm() throws IOException, InterruptedException {
         //проверка на закрытие формы
+        sleep(2000);
         WebElement form = $(By.xpath("//nav[@class='toolbar toolbar--card toolbar--prominent']/div/*[text()='Форма создания']"));
         try {
             ((SelenideElement) form).should(Condition.not(Condition.visible));
@@ -247,9 +247,9 @@ public class ProcurementPage {
 //        robot.keyRelease(KeyEvent.VK_F11);
 
         //card - поиск последней карточк
-        WebElement x1 = $(By.xpath("//div[@class='kanban-column']["+colomn+"]/div[@class='kanban-column__container'][1]/div/div/div/div/div[2]/div[text()='"+numberDoc+"']/../../div[4]"));
+        WebElement x1 = $(By.xpath("//div[@data-index='" + colomn + "']/div/div/div/div[2]/div[text()='"+numberDoc+"']/.."));
         //stage - сам этап
-        WebElement x2 = $(By.xpath("//div[@class='kanban-column']["+colomn1+"]//div[@class='kanban-column__container'][1]/div/div/div[1]"));
+        WebElement x2 = $(By.xpath("//div[@data-index='" + colomn1 + "']"));
         sleep(2000);
 //        actions().click(x1).click(x2).perform();
         robot.setAutoDelay(1500);
@@ -278,9 +278,9 @@ public class ProcurementPage {
     }
 
     public static void clickNewZakupka() throws InterruptedException {
-        WebElement click = $(By.xpath("//div[@class='kanban-column'][1]/div[3]/a/div[@class='btn__content']"));
-        sleep(3000);
-        actions().click(click).perform();
+        WebElement click = $(By.xpath("//div[@class='btn__content' and text()]"));
+        sleep(2000);
+        actions().pause(2000).click(click).perform();
     }
 
 }

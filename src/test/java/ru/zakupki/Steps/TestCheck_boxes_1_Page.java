@@ -27,10 +27,12 @@ public class TestCheck_boxes_1_Page {
 //        Check_Boxes_1_Page.clicklast4Box();
 //    }
 
-    @When("^Клик на чек-бокс \"(.*)\"$")
-    public static void clickLast4KBox(String check) throws InterruptedException, IOException {
-        sleep(3000);
+    @When("^Клик на чек-бокс$")
+    public static void clickLast4KBox() throws InterruptedException, IOException {
+        sleep(4000);
         Check_Boxes_1_Page.clicklast4Box();
+        TestHelper.testOpenFormCheckBox();
+
     }
 
     @When("^Клик на кнопкку 'Заполнить КПГЗ'$")
@@ -79,6 +81,7 @@ public class TestCheck_boxes_1_Page {
 
     @When("^Прикрепление нередактируемых файлов 'Формирование ТЗ'$")
     public static void LoadDontEditFileTZ() throws InterruptedException, IOException, AWTException {
+        sleep(1500);
         TestHelper.loadFile("1111.dgn", 1);
     }
 
