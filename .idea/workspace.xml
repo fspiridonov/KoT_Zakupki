@@ -5,27 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4df23628-aa4c-4340-aee3-a6fa91811095" name="Default" comment="[+] Новые правки;  Добавлен новая фича">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_4.feature" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_4_Check-Boxes.feature" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_5.feature" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_5_Check-Boxes.feature" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_6.feature" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_6_Check-Boxes.feature" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/type/stage#1_type_OMZ_Check-Boxes.feature" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_EFA.feature" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_1.feature" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_EFA_Check-Boxes.feature" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_1_Check-Boxes.feature" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_OMZ.feature" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_2.feature" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_OMZ_Check-Boxes.feature" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_2_Check-Boxes.feature" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_RFQ_3.feature" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_3.feature" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_RFQ_Check-Boxes.feature" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_3_Check-Boxes.feature" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#2Check-Boxes.feature" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#2Check-Boxes.feature" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#3Check-Boxes.feature" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#3Check-Boxes.feature" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Helpers/TestHelper.java" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Helpers/TestHelper.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/Check_Boxes_1_Page.java" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/Check_Boxes_1_Page.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_5.feature" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_5.feature" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_5_Check-Boxes.feature" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_5_Check-Boxes.feature" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_6_Check-Boxes.feature" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_6_Check-Boxes.feature" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/type/stage#1_type_OMZ_Check-Boxes.feature" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Runners/Runner.java" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Runners/Runner.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestCheck_boxes_1_Page.java" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestCheck_boxes_1_Page.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestProcurementPage.java" afterPath="$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestProcurementPage.java" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.json" afterPath="$PROJECT_DIR$/target/cucumber.json" />
       <change beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/formatter.js" afterPath="$PROJECT_DIR$/target/site/cucumber-pretty/formatter.js" />
@@ -65,21 +51,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Runners/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="37" column="34" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+            <state relative-caret-position="153">
+              <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stage#1_type_1.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_1.feature">
+      <file leaf-file-name="stage#1_type_6_Check-Boxes.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_6_Check-Boxes.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stage#1_type_6.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_6.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stage#1_type_5.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_5.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stage#1_type_5_Check-Boxes.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_5_Check-Boxes.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SocketInputStream.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/net/SocketInputStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="79">
+              <caret line="93" column="23" lean-forward="false" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -88,28 +114,8 @@
       <file leaf-file-name="TestProcurementPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestProcurementPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="114" column="31" lean-forward="false" selection-start-line="114" selection-start-column="31" selection-end-line="114" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stage#1_type_2.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_2.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stage#2Check-Boxes.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#2Check-Boxes.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+            <state relative-caret-position="313">
+              <caret line="115" column="27" lean-forward="false" selection-start-line="115" selection-start-column="27" selection-end-line="115" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -118,8 +124,8 @@
       <file leaf-file-name="Check_Boxes_1_Page.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/Check_Boxes_1_Page.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+            <state relative-caret-position="204">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -128,38 +134,18 @@
       <file leaf-file-name="TestCheck_boxes_1_Page.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestCheck_boxes_1_Page.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+            <state relative-caret-position="253">
+              <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stage#1_type_2_Check-Boxes.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_2_Check-Boxes.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="57" column="25" lean-forward="true" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stage#1_type_1_Check-Boxes.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_1_Check-Boxes.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProcurementPage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProcurementPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="230" column="23" lean-forward="false" selection-start-line="230" selection-start-column="23" selection-end-line="230" selection-end-column="23" />
+            <state relative-caret-position="433">
+              <caret line="229" column="0" lean-forward="false" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -260,14 +246,11 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/RequestPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_OMZ_Check-Boxes.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_1.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_5_Check-Boxes.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_5.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_4_Check-Boxes.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_4.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_3_Check-Boxes.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_3.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_6.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_6_Check-Boxes.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_2.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Helpers/TestHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#3Check-Boxes.feature" />
@@ -275,9 +258,12 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/Check_Boxes_1_Page.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_2_Check-Boxes.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestCheck_boxes_1_Page.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Runners/Runner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_5.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestProcurementPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_5_Check-Boxes.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_6_Check-Boxes.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/zakupki/Runners/Runner.java" />
       </list>
     </option>
   </component>
@@ -305,8 +291,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="204" />
-    <option name="y" value="31" />
+    <option name="x" value="214" />
+    <option name="y" value="97" />
     <option name="width" value="1595" />
     <option name="height" value="782" />
   </component>
@@ -457,25 +443,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="zakupki" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KoT_Zakupki" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KoT_Zakupki" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zakupki" type="462c0819:PsiDirectoryNode" />
               <item name="Runners" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KoT_Zakupki" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KoT_Zakupki" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zakupki" type="462c0819:PsiDirectoryNode" />
-              <item name="Steps" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -990,38 +958,45 @@
       <option name="project" value="LOCAL" />
       <updated>1527513888146</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="[+] Новые правки;  Добавлены новые фичи">
+      <created>1527775183096</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1527775183096</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Runner - 2018.05.31 at 16h 19m 30s.xml">
+    <history-entry file="Runner - 2018.06.01 at 13h 40m 04s.xml">
       <configuration name="Runner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Runner - 2018.05.31 at 16h 21m 02s.xml">
+    <history-entry file="Runner - 2018.06.01 at 13h 45m 51s.xml">
       <configuration name="Runner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Runner - 2018.05.31 at 16h 22m 27s.xml">
+    <history-entry file="Runner - 2018.06.01 at 13h 47m 01s.xml">
       <configuration name="Runner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Runner - 2018.05.31 at 16h 25m 55s.xml">
+    <history-entry file="Runner - 2018.06.01 at 13h 47m 58s.xml">
       <configuration name="Runner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Runner - 2018.05.31 at 16h 27m 44s.xml">
+    <history-entry file="Runner - 2018.06.01 at 13h 55m 15s.xml">
       <configuration name="Runner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Runner - 2018.05.31 at 16h 43m 58s.xml">
+    <history-entry file="Runner - 2018.06.01 at 14h 07m 29s.xml">
       <configuration name="Runner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Runner - 2018.05.31 at 16h 47m 04s.xml">
+    <history-entry file="Runner - 2018.06.01 at 14h 17m 50s.xml">
       <configuration name="Runner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Runner - 2018.05.31 at 16h 49m 15s.xml">
+    <history-entry file="Runner - 2018.06.01 at 14h 19m 27s.xml">
       <configuration name="Runner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Runner - 2018.05.31 at 16h 53m 50s.xml">
+    <history-entry file="Runner - 2018.06.01 at 14h 22m 41s.xml">
       <configuration name="Runner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Runner - 2018.05.31 at 16h 58m 26s.xml">
+    <history-entry file="Runner - 2018.06.01 at 14h 28m 21s.xml">
       <configuration name="Runner" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -1035,7 +1010,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="204" y="31" width="1595" height="782" extended-state="0" />
+    <frame x="214" y="97" width="1595" height="782" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1130,19 +1105,19 @@
     <MESSAGE value="[+] Сократил метод для загрузки файлов для каждого чек-бокса в 1 этапе" />
     <MESSAGE value="[+] Исправлен и улучшен DnD; добавлена новая глобальная переменная при создания новой закупки для перетаскивания и будущей проверки; новая версия Selenide;" />
     <MESSAGE value="[+] Правки" />
-    <MESSAGE value="[+] Новые правки;  Добавлены новые фичи" />
     <MESSAGE value="[+] Новые правки;  Добавлен новая фича; Добавлен новый метод внесения значений в массив" />
     <MESSAGE value="[+] Новые правки;  Добавлен новый метод для чек-боксов" />
     <MESSAGE value="[+] Переменованы и добавлены новые фичи" />
     <MESSAGE value="[+] Новые правки;" />
-    <option name="LAST_COMMIT_MESSAGE" value="[+] Новые правки;" />
+    <MESSAGE value="[+] Новые правки;  Добавлены новые фичи" />
+    <option name="LAST_COMMIT_MESSAGE" value="[+] Новые правки;  Добавлены новые фичи" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="901" />
+      <option name="time" value="903" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1175,14 +1150,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="78" column="21" lean-forward="false" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestRedactorPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1341,38 +1308,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_5_Check-Boxes.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_5.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_6.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_6_Check-Boxes.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="37" column="61" lean-forward="true" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_4.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1413,14 +1348,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/net/SocketInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="93" column="23" lean-forward="false" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#3Check-Boxes.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1453,38 +1380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Runners/Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="37" column="34" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_1.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestCheck_boxes_1_Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/Check_Boxes_1_Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#2Check-Boxes.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1504,31 +1399,111 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_2_Check-Boxes.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="57" column="25" lean-forward="true" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+          <caret line="57" column="25" lean-forward="false" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_1.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_2.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="323">
           <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/TreeMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="2259" column="0" lean-forward="false" selection-start-line="2259" selection-start-column="0" selection-end-line="2259" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/net/SocketInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="93" column="23" lean-forward="false" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_5.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestProcurementPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="114" column="31" lean-forward="false" selection-start-line="114" selection-start-column="31" selection-end-line="114" selection-end-column="31" />
+        <state relative-caret-position="313">
+          <caret line="115" column="27" lean-forward="false" selection-start-line="115" selection-start-column="27" selection-end-line="115" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/ProcurementPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="230" column="23" lean-forward="false" selection-start-line="230" selection-start-column="23" selection-end-line="230" selection-end-column="23" />
+        <state relative-caret-position="433">
+          <caret line="229" column="0" lean-forward="false" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Steps/TestCheck_boxes_1_Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_5_Check-Boxes.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Pages/Check_Boxes_1_Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_6_Check-Boxes.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Features/stage#1_type_6.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/zakupki/Runners/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
           <folding />
         </state>
       </provider>

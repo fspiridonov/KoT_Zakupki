@@ -222,6 +222,7 @@ public class ProcurementPage {
         $(By.xpath("//div[text()='" + numberDoc + "']/../../div[3]/div/div[text()]")).shouldHave(Condition.visible);
         String xpath = "//div[text()='" + numberDoc + "']/../../div[3]/div/div[text()]";
         ElementsCollection collect = $$(By.xpath(xpath));
+
         for (SelenideElement aCollection : collect) {
             String ch = aCollection.getText();
             nameCheck.add(ch);

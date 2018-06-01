@@ -93,7 +93,7 @@ public class TestProcurementPage {
 
     @When("^Клик на кнопку 'Новая закупка'$")
     public static void newIpurchase() throws IOException, InterruptedException {
-        sleep(2000);
+        sleep(6000);
         ProcurementPage.clickNewZakupka();
     }
 
