@@ -244,38 +244,43 @@ public class ProcurementPage {
     public static void tranfer(int colomn, int colomn1 ) throws AWTException, InterruptedException {
         refresh();
         sleep(3000);
-        Robot robot = new Robot();
+//        Robot robot = new Robot();
 //        robot.keyRelease(KeyEvent.VK_F11);
 
         //card - поиск последней карточк
         WebElement x1 = $(By.xpath("//div[@data-index='" + colomn + "']/div/div/div/div[2]/div[text()='"+numberDoc+"']/.."));
         //stage - сам этап
         WebElement x2 = $(By.xpath("//div[@data-index='" + colomn1 + "']"));
-        sleep(2000);
-//        actions().click(x1).click(x2).perform();
-        robot.setAutoDelay(1500);
-        org.openqa.selenium.Dimension fromSize = x1.getSize();
-        org.openqa.selenium.Dimension toSize = x2.getSize();
-        int xCentreFrom = fromSize.width / 2;
-        int yCentreFrom = fromSize.height / 2;
-        int xCentreTo = toSize.width / 2;
-        int yCentreTo = toSize.height / 2;
-        org.openqa.selenium.Point fromLocation = x1.getLocation();
-        Point toLocation = x2.getLocation();
-        toLocation.x += xCentreTo;
-        toLocation.y += yCentreTo;
-        fromLocation.x += xCentreFrom;
-        fromLocation.y += yCentreFrom;
-        robot.mouseMove(fromLocation.x, fromLocation.y);
-        robot.mousePress(MouseEvent.BUTTON1_MASK);
-        robot.setAutoDelay(2000);
-        robot.mouseMove(((toLocation.x - fromLocation.x) / 2) + fromLocation.x, ((toLocation.y - fromLocation.y) / 2) + fromLocation.y);
-        robot.mouseMove(toLocation.x, toLocation.y);
-        robot.mouseRelease(MouseEvent.BUTTON1_MASK);
-        robot.setAutoDelay(2000);
-//        actions().pause(1000).dragAndDrop(card, stage).perform();
-        sleep(3000);
-        refresh();
+//        sleep(2000);
+////        actions().click(x1).click(x2).perform();
+//        robot.setAutoDelay(1500);
+//        org.openqa.selenium.Dimension fromSize = x1.getSize();
+//        org.openqa.selenium.Dimension toSize = x2.getSize();
+//        int xCentreFrom = fromSize.width / 2;
+//        int yCentreFrom = fromSize.height / 2;
+//        int xCentreTo = toSize.width / 2;
+//        int yCentreTo = toSize.height / 2;
+//        org.openqa.selenium.Point fromLocation = x1.getLocation();
+//        Point toLocation = x2.getLocation();
+//        toLocation.x += xCentreTo;
+//        toLocation.y += yCentreTo;
+//        fromLocation.x += xCentreFrom;
+//        fromLocation.y += yCentreFrom;
+//        robot.mouseMove(fromLocation.x, fromLocation.y);
+//        robot.mousePress(MouseEvent.BUTTON1_MASK);
+//        robot.setAutoDelay(2000);
+//        robot.mouseMove(((toLocation.x - fromLocation.x) / 2) + fromLocation.x, ((toLocation.y - fromLocation.y) / 2) + fromLocation.y);
+//        robot.mouseMove(toLocation.x, toLocation.y);
+//        robot.mouseRelease(MouseEvent.BUTTON1_MASK);
+//        robot.setAutoDelay(2000);
+////        actions().pause(1000).dragAndDrop(card, stage).perform();
+//        sleep(3000);
+//        refresh();
+
+
+        actions().dragAndDrop(x1,x2).perform();
+
+
     }
 
     public static void clickNewZakupka() throws InterruptedException {

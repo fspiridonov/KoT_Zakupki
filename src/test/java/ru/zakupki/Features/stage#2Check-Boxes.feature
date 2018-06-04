@@ -1,4 +1,4 @@
-@stage#2_1Check-Boxes
+@stage#2Check-Boxes
 
 Feature: stage#2Check-Boxes
 
