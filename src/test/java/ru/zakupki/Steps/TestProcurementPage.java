@@ -118,9 +118,8 @@ public class TestProcurementPage {
 
     @When("^Перенос карточки c этапа \"(.*)\" на этап \"(.*)\"$")
     public static void transferCardZakupki(int idDrag, int idDrop) throws AWTException, InterruptedException {
-        sleep(3000);
+        sleep(5000);
         ProcurementPage.tranfer(idDrag, idDrop);
-        sleep(3000);
 
     }
 

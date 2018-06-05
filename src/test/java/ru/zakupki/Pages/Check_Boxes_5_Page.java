@@ -1,6 +1,5 @@
 package ru.zakupki.Pages;
 
-import net.bytebuddy.dynamic.loading.InjectionClassLoader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import ru.zakupki.Helpers.LoggerConsole;
@@ -9,10 +8,10 @@ import java.io.IOException;
 
 import static com.codeborne.selenide.Selenide.*;
 
-public class Check_Boxes_4_Page {
+public class Check_Boxes_5_Page {
 
     public static void clickCheckBox(String val) throws IOException {
-        WebElement name = $(By.xpath("//div[@data-id='container-id-4']/div/div[last()]/div/div//div[text()='" + val + "']"));
+        WebElement name = $(By.xpath("//div[@data-id='container-id-5']/div/div[last()]/div/div//div[text()='" + val + "']"));
         sleep(3500);
         try {
 //            name.isDisplayed();
@@ -25,7 +24,7 @@ public class Check_Boxes_4_Page {
 
 
     public static void clickInputDate(String blok, String input, String string) throws IOException {
-        WebElement blokAndInputName = $(By.xpath("//div[@class='headline mb-0' and text()='" + blok + "']/../../div[2]/div/div/div/label[text()='" + input + "']/../div"));
+        WebElement blokAndInputName = $(By.xpath("//div[@class='headline mb-0' and text()='" + blok + "']/../../div[2]/div/div/div/label[text()='" + input + "']/../div[1]"));
 
         sleep(500);
         try {
@@ -35,6 +34,5 @@ public class Check_Boxes_4_Page {
             LoggerConsole.Logg("");
         }
     }
-
 
 }
