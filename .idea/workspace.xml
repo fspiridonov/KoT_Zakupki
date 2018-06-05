@@ -754,13 +754,6 @@
       <option name="presentableId" value="Default" />
       <updated>1509699992429</updated>
     </task>
-    <task id="LOCAL-00002" summary="[*] Инициатива">
-      <created>1510558622223</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1510558622223</updated>
-    </task>
     <task id="LOCAL-00003" summary="[+] Запрос">
       <created>1510753314607</created>
       <option name="number" value="00003" />
@@ -1097,7 +1090,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528188646427</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="[+] Новые правки;  Новые фичи">
+      <created>1528188839990</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1528188839991</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1143,7 +1143,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26687115" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1217,8 +1216,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="[+] drag&amp;drop" />
-    <MESSAGE value="[*] Инициатива" />
     <MESSAGE value="[*] Пакеты" />
     <MESSAGE value="[*] Запросы, пакеты" />
     <MESSAGE value="[*] Запросы" />
@@ -1242,7 +1239,9 @@
     <MESSAGE value="[+] Новые правки;" />
     <MESSAGE value="[+] Новые правки;  Улучшен dnd; Добавлена новая фича stage#4" />
     <MESSAGE value="[+] Новые правки; И много чего, лень описывать на данный момент" />
-    <option name="LAST_COMMIT_MESSAGE" value="[+] Новые правки; И много чего, лень описывать на данный момент" />
+    <MESSAGE value="[+] Новые правки;  Новые фичи" />
+    <MESSAGE value="[+] Новые правки;  Добавлен новая фича" />
+    <option name="LAST_COMMIT_MESSAGE" value="[+] Новые правки;  Добавлен новая фича" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
