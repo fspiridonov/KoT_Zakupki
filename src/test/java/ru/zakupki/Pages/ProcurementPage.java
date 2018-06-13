@@ -219,8 +219,8 @@ public class ProcurementPage {
 
     public static void testStorage() throws InterruptedException {
         sleep(6000);
-        $(By.xpath("//div[text()='" + numberDoc + "']/../../div[3]/div/div[text()]")).shouldHave(Condition.visible);
-        String xpath = "//div[text()='" + numberDoc + "']/../../div[3]/div/div[text()]";
+        $(By.xpath("//div[contains(text(),'" + numberDoc + "')]/../../div[3]/div/div[text()]")).shouldHave(Condition.visible);
+        String xpath = "//div[contains(text(),'" + numberDoc + "')]/../../div[3]/div/div[text()]";
         ElementsCollection collect = $$(By.xpath(xpath));
 
         for (SelenideElement aCollection : collect) {

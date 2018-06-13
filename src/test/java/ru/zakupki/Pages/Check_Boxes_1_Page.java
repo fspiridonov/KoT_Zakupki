@@ -27,7 +27,7 @@ public class Check_Boxes_1_Page {
         sleep(2000);
         for (String element : nameCheck) {
             try {
-                WebElement xpatch1 = $(By.xpath("//div[text()='" + numberDoc + "']/../../div[3]/div/div[text()='" + element + "']"));
+                WebElement xpatch1 = $(By.xpath("//div[contains(text(),'" + numberDoc + "')]/../../div[3]/div/div[text()='" + element + "']"));
                 sleep(1500);
                 actions().click(xpatch1).perform();
                 LoggerConsole.LoggNotError("входит внутрь чекбокса '" + element + "' ");
@@ -44,7 +44,7 @@ public class Check_Boxes_1_Page {
         try {
             if (yyy.length == 1) {
             } else {
-                $(By.xpath("//div[text()='" + numberDoc + "']/../../div[3]/div[@class='kanban-task py-2 card__text py-1 kanban-task_disabled']/div[text()='" + String.valueOf(yyy[1]) + "']")).shouldHave(Condition.visible);
+                $(By.xpath("//div[contains(text(),'" + numberDoc + "')]/../../div[3]/div[@class='kanban-task py-2 card__text py-1 kanban-task_disabled']/div[text()='" + String.valueOf(yyy[1]) + "']")).shouldHave(Condition.visible);
             }
         } catch (Error e) {
             nameCheck.remove(0);
@@ -55,7 +55,7 @@ public class Check_Boxes_1_Page {
 
     public static void clickfillKPGZ() throws IOException {
 //Клик на кнопкку 'Заполнить КПГЗ'
-        WebElement name = $(By.xpath("//*[@id='form-task']/div[1]/div/button[1]/div"));
+        WebElement name = $(By.xpath("//*[@id='form-task']/div[1]/div[2]/div/button"));
         sleep(1500);
 
         try {
@@ -100,7 +100,7 @@ public class Check_Boxes_1_Page {
 
     public static void Clickadd() throws IOException {
         //todo
-        WebElement name = $(By.xpath("//*[@id='form-task']/div/div/button[1]/div"));
+        WebElement name = $(By.xpath("//*[@id='form-task']/div[1]/div[2]/div/button"));
         sleep(3000);
 
         try {
