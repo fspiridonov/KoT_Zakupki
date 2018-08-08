@@ -218,8 +218,8 @@ public class ProcurementPage {
 
 
     public static void testStorage() throws InterruptedException {
-        sleep(6000);
-        $(By.xpath("//div[contains(text(),'" + numberDoc + "')]/../../div[3]/div/div[text()]")).shouldHave(Condition.visible);
+        sleep(7000);
+        $(By.xpath("//div[contains(text(),'" + numberDoc + "')]/../../div[3]/div/div[text()]")).isEnabled();
         String xpath = "//div[contains(text(),'" + numberDoc + "')]/../../div[3]/div/div[text()]";
         ElementsCollection collect = $$(By.xpath(xpath));
 
@@ -232,9 +232,9 @@ public class ProcurementPage {
     public static void testCloseForm() throws IOException, InterruptedException {
         //проверка на закрытие формы
         sleep(2000);
-        WebElement form = $(By.xpath("//nav[@class='toolbar toolbar--card toolbar--prominent']/div/*[text()='Форма создания']"));
+        SelenideElement form = $(By.xpath("//nav[@class='toolbar toolbar--card toolbar--prominent']/div/*[text()='Форма создания']"));
         try {
-            ((SelenideElement) form).should(Condition.not(Condition.visible));
+            form.should(Condition.not(Condition.visible));
             LoggerConsole.LoggNotError("Форма закрылась после кнопки 'Сохранить'");
         } catch (Error e) {
             LoggerConsole.Logg("Форма  НЕ закрылась после кнопки 'Сохранить'");
@@ -242,17 +242,17 @@ public class ProcurementPage {
     }
     //перенос документов
     public static void tranfer(int colomn, int colomn1 ) throws AWTException, InterruptedException {
-        refresh();
+
         sleep(3000);
 //        Robot robot = new Robot();
 //        robot.keyRelease(KeyEvent.VK_F11);
 
         //card - поиск последней карточк
-        WebElement x1 = $(By.xpath("//div[@data-index='" + colomn + "']/div/div/div/div[2]/div[text()='"+numberDoc+"']/.."));
+        WebElement x1 = $(By.xpath("//div[@data-index='" + colomn + "']/div/div/div/div[2]/div[text()[contains(.,'"+numberDoc+"')]]/.."));
         //stage - сам этап
         WebElement x2 = $(By.xpath("//div[@data-index='" + colomn1 + "']"));
 //        sleep(2000);
-////        actions().click(x1).click(x2).perform();
+        actions().click(x1).perform();
 //        robot.setAutoDelay(1500);
 //        org.openqa.selenium.Dimension fromSize = x1.getSize();
 //        org.openqa.selenium.Dimension toSize = x2.getSize();

@@ -16,7 +16,7 @@ public class Check_Boxes_2_Page {
     public static void clicklast4Box(String val) throws IOException {
 //заполняем поле причины
         WebElement name = $(By.xpath("//div[@data-id='container-id-2']/div/div[last()]/div/div//div[text()='" + val + "']"));
-        sleep(3500);
+        sleep(5000);
         try {
 //            name.isDisplayed();
             actions().click(name).perform();

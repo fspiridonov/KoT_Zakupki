@@ -38,7 +38,17 @@ public class TestHelper {
 
     public static void loadFile(String file, int num) {
 //        Загружаю файл file кнопкой
-        $(By.xpath("//div["+num+"]/*/input[@type='file']")).uploadFile(new File("src/test/repository/Files/" + file));
+        try {
+            $(By.xpath("//div["+num+"]/*/input[@type='file']")).isEnabled();
+            $(By.xpath("//div["+num+"]/*/input[@type='file']")).uploadFile(new File("src/test/repository/Files/" + file));
+        } catch (Error e) {
+
+        }
+    }
+
+    public static void loadFileNext(String file, int num) {
+//        Загружаю файл file кнопкой
+        $(By.xpath("//div[@class='layout column']/div[2]//div["+num+"]/*/input[@type='file']")).uploadFile(new File("src/test/repository/Files/" + file));
 
     }
 
@@ -558,9 +568,9 @@ public class TestHelper {
         WebElement form = $(By.xpath("//div[@class='card-form']"));
         try {
             ((SelenideElement) form).should(Condition.visible);
-            LoggerConsole.LoggNotError("Форма открылась после клика на чек бокс ' ");
+            LoggerConsole.LoggNotError("Форма открылась после клика на чек бокс");
         } catch (Error e) {
-            LoggerConsole.Logg("Форма  НЕ закрылась после кнопки 'Сохранить'");
+            LoggerConsole.Logg("Форма НЕ закрылась после кнопки 'Сохранить'");
         }
     }
 

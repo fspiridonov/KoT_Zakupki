@@ -23,6 +23,7 @@ public class TestCheck_boxes_2_Page {
 
     @When("^Клик на чек-бокс 2 \"(.*)\"$")
     public static void clickLast4KBox(String val) throws InterruptedException, IOException {
+        sleep(2000);
         Check_Boxes_2_Page.clicklast4Box(val);
     }
 

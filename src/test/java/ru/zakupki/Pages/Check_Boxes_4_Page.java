@@ -24,15 +24,15 @@ public class Check_Boxes_4_Page {
     }
 
 
-    public static void clickInputDate(String blok, String input, String string) throws IOException {
-        WebElement blokAndInputName = $(By.xpath("//div[@class='headline mb-0' and text()='" + blok + "']/../../div[2]/div/div/div/label[text()='" + input + "']/../div"));
+    public static void clickInputDate(String input, String string) throws IOException {
+        WebElement blokAndInputName = $(By.xpath("//input[@aria-label='"+input+"']"));
 
         sleep(500);
         try {
             actions().click(blokAndInputName).sendKeys(string).perform();
-            LoggerConsole.LoggNotError("");
+            LoggerConsole.LoggNotError("Поле '"+input+"' было заполнено");
         } catch (Error e) {
-            LoggerConsole.Logg("");
+            LoggerConsole.Logg("Поле '"+input+"' НЕ было заполнено");
         }
     }
 

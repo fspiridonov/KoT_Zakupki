@@ -8,9 +8,12 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import ru.zakupki.Helpers.LoggerConsole;
 
+import java.awt.*;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReferenceArray;
 
@@ -24,15 +27,21 @@ public class Check_Boxes_1_Page {
 
     public static void clicklast4Box() throws IOException {
 //Клик на чек-бокс "" первого этапа
-        sleep(2000);
+        sleep(6000);
         for (String element : nameCheck) {
+
             try {
                 WebElement xpatch1 = $(By.xpath("//div[contains(text(),'" + numberDoc + "')]/../../div[3]/div/div[text()='" + element + "']"));
-                sleep(1500);
-                actions().click(xpatch1).perform();
-                LoggerConsole.LoggNotError("входит внутрь чекбокса '" + element + "' ");
+                xpatch1.isEnabled();
+                xpatch1.click();
+//                actions().click(xpatch1).perform();
+                LoggerConsole.LoggNotError("Вход внутрь чекбокс '" + element + "' ");
+
+                WebElement form = $(By.xpath("//div[@class='elevation-3 card card--flat']"));
+                form.isEnabled();
+                LoggerConsole.LoggNotError("Форма открылась");
             } catch (Error e) {
-                LoggerConsole.Logg("Не смог войти внутрь тестовой закупки '" + element + "' ");
+                LoggerConsole.Logg("Не смог зайти внутр чекбокса '" + element + "' и не открылась форма '" + element + "'");
             }
             break;
         }
@@ -44,7 +53,8 @@ public class Check_Boxes_1_Page {
         try {
             if (yyy.length == 1) {
             } else {
-                $(By.xpath("//div[contains(text(),'" + numberDoc + "')]/../../div[3]/div[@class='kanban-task py-2 card__text py-1 kanban-task_disabled']/div[text()='" + String.valueOf(yyy[1]) + "']")).shouldHave(Condition.visible);
+                sleep(16000);
+                $(By.xpath("//div[contains(text(),'" + numberDoc + "')]/../../div[3]/div[@class='kanban-task py-2 card__text py-1 kanban-task_disabled']/div[text()='" + String.valueOf(yyy[1]) + "']")).isEnabled();
             }
         } catch (Error e) {
             nameCheck.remove(0);
@@ -55,7 +65,7 @@ public class Check_Boxes_1_Page {
 
     public static void clickfillKPGZ() throws IOException {
 //Клик на кнопкку 'Заполнить КПГЗ'
-        WebElement name = $(By.xpath("//*[@id='form-task']/div[1]/div[2]/div/button"));
+        WebElement name = $(By.xpath("//*[@id='form-task']/div[1]/div[2]/div/button[1]/div"));
         sleep(1500);
 
         try {
@@ -100,12 +110,13 @@ public class Check_Boxes_1_Page {
 
     public static void Clickadd() throws IOException {
         //todo
-        WebElement name = $(By.xpath("//*[@id='form-task']/div[1]/div[2]/div/button"));
-        sleep(3000);
+        WebElement name = $(By.xpath("//*[@id='form-task']/div[1]/div[2]/div/button[1]"));
+        sleep(4000);
 
         try {
             sleep(1500);
-            actions().click(name).perform();
+//            actions().click(name).perform();
+            $(By.xpath("//*[@id='form-task']/div[1]/div[2]/div/button[1]")).click();
             LoggerConsole.LoggNotError("клик на кнопку создать");
         } catch (Error e) {
             LoggerConsole.Logg("Не смог кликнуть на кнопку создать");
@@ -262,10 +273,10 @@ public class Check_Boxes_1_Page {
         try {
             datamer.isDisplayed();
             actions().click(datamer).sendKeys("2").sendKeys(Keys.ENTER).perform();
-            LoggerConsole.LoggNotError("клик на поле закон");
+            LoggerConsole.LoggNotError("Клик на поле закон");
 
         } catch (Error e) {
-            LoggerConsole.Logg("Не смог кликнуть на поле закон");
+            LoggerConsole.Logg("Не непроизошел клик на поле закон");
         }
     }
 
@@ -277,9 +288,32 @@ public class Check_Boxes_1_Page {
             actions().click(valuation).perform();
 //            actions().sendKeys(fieldLogin,login).perform();
 
-            LoggerConsole.LoggNotError("выбирает закон");
+            LoggerConsole.LoggNotError("Выбор параметра на основания закона");
         } catch (Error e) {
             LoggerConsole.Logg("не смог выбирать закон");
         }
     }
+
+    //Проверка на открытие формы
+    public static void testOpenForm() throws FileNotFoundException, IOException {
+        WebElement form = $(By.xpath("//div[@class='elevation-3 card card--flat']"));
+        try {
+            form.isEnabled();
+            LoggerConsole.LoggNotError("Форма открылась");
+        } catch (Error e) {
+            LoggerConsole.Logg("Форма не открылась");
+        }
+    }
+
+    //Проверка на закрытые формы
+    public static void testCloseForm() throws FileNotFoundException, IOException {
+        WebElement form = $(By.xpath("//div[@class='elevation-3 card card--flat']"));
+        try {
+            form.isDisplayed();
+            LoggerConsole.LoggNotError("Форма закрылась");
+        } catch (Error e) {
+            LoggerConsole.Logg("Форма не закрылась");
+        }
+    }
+
 }

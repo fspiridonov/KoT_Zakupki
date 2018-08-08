@@ -2,40 +2,31 @@ package ru.zakupki.Runners;
 
 
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.WebDriverRunner;
 import cucumber.api.CucumberOptions;
-import cucumber.api.Scenario;
-import cucumber.api.SnippetType;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
-import cucumber.api.java.en.Given;
 import cucumber.api.junit.Cucumber;
-import net.bytebuddy.implementation.bind.annotation.RuntimeType;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.Selenide.open;
+
 @Test
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = {"src/test/java/ru/zakupki/Features"},
         glue = "ru/zakupki/Steps",
-        tags = {"@Этап1_с_поставщиком_5, @stage#1_5, @stage#2_5, @stage#3_5, @stage#4_5, @stage#5_5, @stage#6_5"}, //Запустить несколько фич
+        tags = {"@Этап1_с_поставщиком_5, @stage#1_5"}, //Запустить несколько фич
 //        tags = {"@stage#0"},
         format = {"json:target/cucumber.json","html:target/site/cucumber-pretty"},
         strict = true
         )
 
-public class Runner {
+public class Run_Stage1_5 {
 
     @BeforeClass
 
     static public void Initialization() {
-        Configuration.timeout = 10000;
+        Configuration.timeout = 5000;
         Configuration.startMaximized = true;
         System.setProperty("webdriver.chrome.driver", "src\\test\\repository\\webDriver\\chromedriver.exe");
         Configuration.browser = "chrome";

@@ -13,6 +13,7 @@ import java.util.logging.Level;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.getWebDriverLogs;
+import static com.codeborne.selenide.Selenide.sleep;
 import static ru.zakupki.Helpers.StorageString.contentError.error;
 import static ru.zakupki.Helpers.StorageString.stringLogg.*;
 
@@ -24,7 +25,8 @@ public class LoggerConsole {
 
     public static void Logg(String logg) {
         try {
-            WebElement errorText = $(By.xpath("//div[@class='messenger error']"));
+            sleep(1500);
+            WebElement errorText = $(By.xpath("//div[@class='snotifyToast__body']"));
             error = errorText.getText();
         } catch (Error e) {
 
@@ -42,11 +44,24 @@ public class LoggerConsole {
 
 
     public static void LoggNotError(String nLogg) throws IOException {
+        String test = String.valueOf(error);
+        String logg = String.valueOf(Logg);
+        String test1 = "null";
+        String Logg1 = "null";
+
         String Logging = "Отчеты\\" + "Отчет №" + nameFile + ".txt";
         FileWriter writer = new FileWriter(Logging, true);
         try {
-            writer.write("\n" + "Шаг:  " + nLogg + "\n" + "Строка ошибки: " + error + "\n" + "Причина: " + Logg + "\n");
-            writer.flush();
+            if (logg.equals(Logg1)) {
+                writer.write("\n" + "Шаг:  " + nLogg + "\n");
+                writer.flush();
+            } else if(test.equals(test1)){
+                writer.write("\n" + "Шаг:  " + nLogg + "\n" + "Причина: " + Logg + "\n");
+                writer.flush();
+            } else {
+                writer.write("\n" + "Шаг:  " + nLogg + "\n" + "Строка ошибки: " + error + "\n" + "Причина: " + Logg + "\n");
+                writer.flush();
+            }
         } catch (IOException ex) {
             ex.printStackTrace();
         }

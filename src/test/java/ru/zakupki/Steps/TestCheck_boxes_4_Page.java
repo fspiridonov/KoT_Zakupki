@@ -12,8 +12,8 @@ public class TestCheck_boxes_4_Page {
         Check_Boxes_4_Page.clickCheckBox(val);
     }
 
-    @When("^Выбор блока \"(.*)\" и заполнение поля \"(.*)\" со значениями \"(.*)\"$")
-    public static void clickInput(String blok, String input, String string) throws IOException {
-        Check_Boxes_4_Page.clickInputDate(blok, input, string);
+    @When("^Выбор поля \"(.*)\" и заполняем значения \"(.*)\"$")
+    public static void clickInput(String input, String string) throws IOException {
+        Check_Boxes_4_Page.clickInputDate(input, string);
     }
 }
